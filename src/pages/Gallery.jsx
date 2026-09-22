@@ -3,7 +3,7 @@ import DownloadCard from '../components/DownloadCard';
 
 const Gallery = () => {
     const images = [
-        { type: 'Campaign', title: "MSME Awareness Camp - Ongole", color: "bg-teal-50", img: "/images/main-poster.jpg" },
+        { type: 'Campaign', title: "MSME Awareness Camp - Ongole", color: "bg-teal-50", img: "/images/msme-empowerment.jpg" },
         { type: 'Poster', title: "ZED Certification Benefits", color: "bg-amber-50", img: "/images/zed-benefits.jpg" },
         { type: 'Event', title: "National Quality Conclave 2025", color: "bg-blue-50", img: "/images/events/conclave/conclave-main.png" },
         { type: 'Conference', title: "National Quality Conclave - Header", color: "bg-blue-50", img: "/images/events/conclave/conclave-header.png" },
