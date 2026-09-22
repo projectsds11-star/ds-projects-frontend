@@ -1,32 +1,32 @@
-# Shanmukha Projects - React Website
+﻿# DS Projects - React Website
 
-This is a complete, production-ready React website for **SHANMUKHA STATE & CENTRAL GOVERNMENT CONTRACT & PROJECT SERVICES**.
+This is a complete, production-ready React website for **DS Projects**.
 It is built with React (Vite), React Router v6, and Tailwind CSS.
 
 ## 1. Project Structure
 
 ```
 Gov-Project/
-├── public/              # Static assets (images, icons)
-├── src/
-│   ├── components/
-│   │   └── layout/      # Layout components (Navbar, Footer)
-│   ├── pages/           # Page components
-│   │   ├── Home.jsx
-│   │   ├── About.jsx
-│   │   ├── Services.jsx
-│   │   ├── ZEDCertification.jsx
-│   │   ├── Careers.jsx
-│   │   ├── Gallery.jsx
-│   │   └── Contact.jsx
-│   ├── App.jsx          # Routing Configuration
-│   ├── main.jsx         # Entry point
-│   └── index.css        # Global styles & Tailwind directives
-├── index.html           # HTML template
-├── tailwind.config.js   # Tailwind configuration
-├── postcss.config.js    # PostCSS configuration
-├── package.json         # Dependencies & scripts
-└── vite.config.js       # Vite configuration
+â”œâ”€â”€ public/              # Static assets (images, icons)
+â”œâ”€â”€ src/
+â”‚   â”œâ”€â”€ components/
+â”‚   â”‚   â””â”€â”€ layout/      # Layout components (Navbar, Footer)
+â”‚   â”œâ”€â”€ pages/           # Page components
+â”‚   â”‚   â”œâ”€â”€ Home.jsx
+â”‚   â”‚   â”œâ”€â”€ About.jsx
+â”‚   â”‚   â”œâ”€â”€ Services.jsx
+â”‚   â”‚   â”œâ”€â”€ ZEDCertification.jsx
+â”‚   â”‚   â”œâ”€â”€ Careers.jsx
+â”‚   â”‚   â”œâ”€â”€ Gallery.jsx
+â”‚   â”‚   â””â”€â”€ Contact.jsx
+â”‚   â”œâ”€â”€ App.jsx          # Routing Configuration
+â”‚   â”œâ”€â”€ main.jsx         # Entry point
+â”‚   â””â”€â”€ index.css        # Global styles & Tailwind directives
+â”œâ”€â”€ index.html           # HTML template
+â”œâ”€â”€ tailwind.config.js   # Tailwind configuration
+â”œâ”€â”€ postcss.config.js    # PostCSS configuration
+â”œâ”€â”€ package.json         # Dependencies & scripts
+â””â”€â”€ vite.config.js       # Vite configuration
 ```
 
 ## 2. Tech Stack
@@ -100,7 +100,7 @@ If you encounter 404 errors when refreshing pages on Vercel/Netlify:
 
 ## 5. Content & Compliance
 
-- **Organization:** SHANMUKHA STATE & CENTRAL GOVERNMENT CONTRACT & PROJECT SERVICES
+- **Organization:** DS Projects
 - **Registration:** UDYAM-AP-13-0078844
 - **Disclaimer:** The website clearly states "Authorized Partner / Facilitator" and does not claim to be a government department.
 - **Colors:** Green, Blue, White (Clean Government Style).

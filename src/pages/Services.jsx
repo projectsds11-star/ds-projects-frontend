@@ -8,7 +8,7 @@ const Services = () => {
         {
             id: "zed-certification",
             title: "MSME ZED Certification",
-            icon: <ShieldCheck className="h-10 w-10 text-[#45b1b8]" />,
+            icon: <ShieldCheck className="h-10 w-10 text-[#0055A4]" />,
             description: "Comprehensive support for MSMEs to achieve 'Zero Defect Zero Effect' certification from the Ministry of MSME, enhancing global competitiveness.",
             details: [
                 "Awareness & Onboarding of MSMEs",
@@ -34,7 +34,7 @@ const Services = () => {
         {
             id: "govt-contracts",
             title: "State & Central Govt. Projects",
-            icon: <Briefcase className="h-10 w-10 text-[#45b1b8]" />,
+            icon: <Briefcase className="h-10 w-10 text-[#0055A4]" />,
             description: "Execution and management support for various government contracts, surveys, and field-level developmental implementations.",
             details: [
                 "MSME Digital Empowerment Initiatives",
@@ -49,7 +49,7 @@ const Services = () => {
     return (
         <div className="bg-[#f8fafc] min-h-screen">
             {/* Page Header */}
-            <div className="bg-[#45b1b8] text-white py-16 md:py-20 border-b-4 border-[#a5d63f] relative overflow-hidden">
+            <div className="bg-[#0055A4] text-white py-16 md:py-20 border-b-4 border-[#a5d63f] relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:20px_20px]"></div>
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
                     <h1 className="text-4xl md:text-5xl font-black mb-4 tracking-tight uppercase">Our Schemes & Services</h1>
@@ -63,16 +63,16 @@ const Services = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
                 <div className="space-y-12">
                     {services.map((service) => (
-                        <div key={service.id} className="bg-white rounded-sm shadow-xl border border-gray-100 overflow-hidden hover:border-[#45b1b8] transition-all duration-300">
+                        <div key={service.id} className="bg-white rounded-sm shadow-xl border border-gray-100 overflow-hidden hover:border-[#0055A4] transition-all duration-300">
                             <div className="md:flex">
                                 <div className="md:w-72 bg-gray-50 flex flex-col items-center justify-center p-10 border-r border-gray-100">
                                     <div className="bg-white p-6 rounded-full shadow-md border border-gray-100 mb-6 group-hover:scale-110 transition-transform">
                                         {service.icon}
                                     </div>
-                                    <h3 className="text-xl font-bold text-center text-[#1a5d62] uppercase tracking-tight leading-tight">{service.title}</h3>
+                                    <h3 className="text-xl font-bold text-center text-[#003366] uppercase tracking-tight leading-tight">{service.title}</h3>
                                 </div>
                                 <div className="p-10 md:flex-1">
-                                    <div className="bg-teal-50/50 p-6 border-l-8 border-[#45b1b8] mb-8">
+                                    <div className="bg-teal-50/50 p-6 border-l-8 border-[#0055A4] mb-8">
                                         <p className="text-gray-800 text-lg leading-relaxed font-medium">
                                             {service.description}
                                         </p>
@@ -93,7 +93,7 @@ const Services = () => {
                                     <div className="pt-6 border-t border-gray-100">
                                         <Link
                                             to={service.link}
-                                            className="inline-flex items-center gap-2 bg-[#45b1b8] text-white px-8 py-3 text-sm font-black uppercase tracking-widest hover:bg-[#1a5d62] transition-all shadow-lg rounded-sm"
+                                            className="inline-flex items-center gap-2 bg-[#0055A4] text-white px-8 py-3 text-sm font-black uppercase tracking-widest hover:bg-[#003366] transition-all shadow-lg rounded-sm"
                                         >
                                             View Details
                                             <ChevronRight size={16} />
@@ -107,13 +107,13 @@ const Services = () => {
             </div>
 
             {/* CTA Section */}
-            <div className="bg-[#1a5d62] py-16 text-white text-center">
+            <div className="bg-[#003366] py-16 text-white text-center">
                 <div className="max-w-4xl mx-auto px-4">
                     <h2 className="text-3xl font-black uppercase tracking-widest mb-6 text-[#a5d63f]">Interested in our services?</h2>
                     <p className="text-teal-50 text-lg mb-10 max-w-2xl mx-auto">
                         We provide end-to-end support for registration, documentation, and implementation of government projects.
                     </p>
-                    <Link to="/contact" className="inline-block bg-white text-[#1a5d62] px-12 py-4 text-sm font-black uppercase tracking-widest hover:bg-[#a5d63f] hover:text-white transition-all shadow-2xl">
+                    <Link to="/contact" className="inline-block bg-white text-[#003366] px-12 py-4 text-sm font-black uppercase tracking-widest hover:bg-[#a5d63f] hover:text-white transition-all shadow-2xl">
                         Enquire Now
                     </Link>
                 </div>
@@ -129,7 +129,7 @@ const Services = () => {
                             Explore the various government benefits and schemes available for MSMEs
                         </p>
                     </div>
-                    <div className="bg-white rounded-lg shadow-2xl overflow-hidden border-4 border-[#45b1b8]">
+                    <div className="bg-white rounded-lg shadow-2xl overflow-hidden border-4 border-[#0055A4]">
                         <img
                             src="/images/msme-benefits.jpg"
                             alt="MSME Benefits & Schemes - Government of India"

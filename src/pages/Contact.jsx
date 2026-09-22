@@ -29,7 +29,7 @@ const Contact = () => {
             `Message: ${message}%0a` +
             `------------------------`;
 
-        const phoneNumber = '919030327779';
+        const phoneNumber = '919701529797';
         const url = `https://wa.me/${phoneNumber}?text=${whatsappMessage}`;
 
         window.open(url, '_blank');
@@ -38,7 +38,7 @@ const Contact = () => {
     return (
         <div className="bg-[#f8fafc] min-h-screen font-sans">
             {/* Page Header */}
-            <div className="bg-[#45b1b8] text-white py-16 md:py-20 border-b-4 border-[#a5d63f] relative overflow-hidden text-center">
+            <div className="bg-[#0055A4] text-white py-16 md:py-20 border-b-4 border-[#a5d63f] relative overflow-hidden text-center">
                 <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:20px_20px]"></div>
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <h1 className="text-4xl md:text-5xl font-black mb-4 tracking-tight uppercase">Get in Touch</h1>
@@ -55,19 +55,18 @@ const Contact = () => {
                     {/* Contact Info & Map */}
                     <div className="space-y-12">
                         <div>
-                            <h2 className="text-3xl font-bold text-[#1a202c] mb-8 border-l-4 border-[#45b1b8] pl-4 uppercase tracking-tight">Our Location</h2>
+                            <h2 className="text-3xl font-bold text-[#1a202c] mb-8 border-l-4 border-[#0055A4] pl-4 uppercase tracking-tight">Our Location</h2>
                             <div className="bg-white p-8 rounded-sm shadow-xl border border-gray-100 space-y-8">
                                 <div className="flex items-start gap-5 pb-8 border-b border-gray-100">
-                                    <div className="bg-[#45b1b8] p-4 rounded-full text-white shadow-md">
+                                    <div className="bg-[#0055A4] p-4 rounded-full text-white shadow-md">
                                         <MapPin size={24} />
                                     </div>
                                     <div>
-                                        <h3 className="font-black text-[#1a5d62] mb-2 uppercase tracking-widest text-xs">Headquarters</h3>
+                                        <h3 className="font-black text-[#003366] mb-2 uppercase tracking-widest text-xs">Headquarters</h3>
                                         <p className="text-gray-700 leading-relaxed font-medium">
-                                            3rd Floor, Sai Complex,<br />
-                                            Dharavari Thota, Ongole,<br />
-                                            Prakasam District,<br />
-                                            Andhra Pradesh – 523001
+                                            Sai Complex, 3rd Floor,<br />
+                                            Daravari Thota, Opp: Bank Of Baroda,<br />
+                                            Ongole, PIN: 523001, AP
                                         </p>
                                     </div>
                                 </div>
@@ -77,23 +76,23 @@ const Contact = () => {
                                         <Phone size={24} />
                                     </div>
                                     <div>
-                                        <h3 className="font-black text-[#1a5d62] mb-2 uppercase tracking-widest text-xs">Phone</h3>
-                                        <p className="text-gray-900 font-black text-2xl tracking-tighter">+91 90303 27779</p>
+                                        <h3 className="font-black text-[#003366] mb-2 uppercase tracking-widest text-xs">Phone</h3>
+                                        <p className="text-gray-900 font-black text-2xl tracking-tighter">+91 9701529797</p>
                                         <p className="text-gray-500 text-xs mt-1 font-bold uppercase tracking-widest">(Mon-Sat, 9 AM - 6 PM)</p>
                                     </div>
                                 </div>
 
                                 <div className="flex items-start gap-5 pb-8 border-b border-gray-100">
-                                    <div className="bg-[#45b1b8] p-4 rounded-full text-white shadow-md">
+                                    <div className="bg-[#0055A4] p-4 rounded-full text-white shadow-md">
                                         <Mail size={24} />
                                     </div>
                                     <div>
-                                        <h3 className="font-black text-[#1a5d62] mb-2 uppercase tracking-widest text-xs">Email</h3>
-                                        <p className="text-gray-700 font-bold text-lg">shanmukhaprojects999@gmail.com</p>
+                                        <h3 className="font-black text-[#003366] mb-2 uppercase tracking-widest text-xs">Email</h3>
+                                        <p className="text-gray-700 font-bold text-lg">projectds11@gmail.com</p>
                                     </div>
                                 </div>
 
-                                <a href="https://wa.me/919030327779" target="_blank" rel="noopener noreferrer" className="flex items-center gap-5 group cursor-pointer">
+                                <a href="https://wa.me/919701529797" target="_blank" rel="noopener noreferrer" className="flex items-center gap-5 group cursor-pointer">
                                     <div className="bg-[#25D366] p-4 rounded-full text-white shadow-md group-hover:scale-110 transition-transform">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
@@ -106,8 +105,8 @@ const Contact = () => {
                                         </svg>
                                     </div>
                                     <div>
-                                        <h3 className="font-black text-[#1a5d62] mb-2 uppercase tracking-widest text-xs">WhatsApp</h3>
-                                        <p className="text-gray-700 font-bold text-lg group-hover:text-[#25D366] transition-colors">+91 90303 27779</p>
+                                        <h3 className="font-black text-[#003366] mb-2 uppercase tracking-widest text-xs">WhatsApp</h3>
+                                        <p className="text-gray-700 font-bold text-lg group-hover:text-[#25D366] transition-colors">+91 9701529797</p>
                                     </div>
                                 </a>
                             </div>
@@ -115,7 +114,7 @@ const Contact = () => {
 
                         <div className="rounded-sm overflow-hidden shadow-2xl border-4 border-white h-96 relative">
                             <iframe
-                                title="Shanmukha Projects Ongole"
+                                title="DS Projects Ongole"
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15383.914594248476!2d80.03819894709425!3d15.512349001601735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4b01620d43c3bf%3A0x673172e259e51c89!2sOngole%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
                                 width="100%"
                                 height="100%"
@@ -129,7 +128,7 @@ const Contact = () => {
 
                     {/* Contact Form */}
                     <div>
-                        <div className="bg-white p-10 rounded-sm shadow-2xl border border-gray-100 border-t-8 border-t-[#45b1b8]">
+                        <div className="bg-white p-10 rounded-sm shadow-2xl border border-gray-100 border-t-8 border-t-[#0055A4]">
                             <div className="mb-10">
                                 <h2 className="text-3xl font-black text-[#1a202c] mb-2 uppercase tracking-tight">Send a Message</h2>
                                 <p className="text-gray-500 font-medium">We usually respond within 24 business hours.</p>
@@ -139,25 +138,25 @@ const Contact = () => {
                             <form className="space-y-8" onSubmit={handleSubmit}>
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                                     <div className="space-y-3">
-                                        <label className="text-xs font-black uppercase text-[#1a5d62] tracking-[0.2em]">Full Name</label>
+                                        <label className="text-xs font-black uppercase text-[#003366] tracking-[0.2em]">Full Name</label>
                                         <input
                                             type="text"
                                             name="name"
                                             value={formData.name}
                                             onChange={handleChange}
-                                            className="w-full px-5 py-4 rounded-sm border-2 border-gray-100 focus:border-[#45b1b8] outline-none transition-all bg-gray-50/50 font-medium"
+                                            className="w-full px-5 py-4 rounded-sm border-2 border-gray-100 focus:border-[#0055A4] outline-none transition-all bg-gray-50/50 font-medium"
                                             placeholder="John Doe"
                                             required
                                         />
                                     </div>
                                     <div className="space-y-3">
-                                        <label className="text-xs font-black uppercase text-[#1a5d62] tracking-[0.2em]">Phone Number</label>
+                                        <label className="text-xs font-black uppercase text-[#003366] tracking-[0.2em]">Phone Number</label>
                                         <input
                                             type="tel"
                                             name="phone"
                                             value={formData.phone}
                                             onChange={handleChange}
-                                            className="w-full px-5 py-4 rounded-sm border-2 border-gray-100 focus:border-[#45b1b8] outline-none transition-all bg-gray-50/50 font-medium"
+                                            className="w-full px-5 py-4 rounded-sm border-2 border-gray-100 focus:border-[#0055A4] outline-none transition-all bg-gray-50/50 font-medium"
                                             placeholder="+91 90000 00000"
                                             required
                                         />
@@ -165,26 +164,26 @@ const Contact = () => {
                                 </div>
 
                                 <div className="space-y-3">
-                                    <label className="text-xs font-black uppercase text-[#1a5d62] tracking-[0.2em]">Email Address</label>
+                                    <label className="text-xs font-black uppercase text-[#003366] tracking-[0.2em]">Email Address</label>
                                     <input
                                         type="email"
                                         name="email"
                                         value={formData.email}
                                         onChange={handleChange}
-                                        className="w-full px-5 py-4 rounded-sm border-2 border-gray-100 focus:border-[#45b1b8] outline-none transition-all bg-gray-50/50 font-medium"
+                                        className="w-full px-5 py-4 rounded-sm border-2 border-gray-100 focus:border-[#0055A4] outline-none transition-all bg-gray-50/50 font-medium"
                                         placeholder="john@example.com"
                                         required
                                     />
                                 </div>
 
                                 <div className="space-y-3">
-                                    <label className="text-xs font-black uppercase text-[#1a5d62] tracking-[0.2em]">Inquiry Type</label>
+                                    <label className="text-xs font-black uppercase text-[#003366] tracking-[0.2em]">Inquiry Type</label>
                                     <div className="relative">
                                         <select
                                             name="inquiryType"
                                             value={formData.inquiryType}
                                             onChange={handleChange}
-                                            className="w-full px-5 py-4 rounded-sm border-2 border-gray-100 focus:border-[#45b1b8] outline-none transition-all bg-gray-50/50 font-bold appearance-none"
+                                            className="w-full px-5 py-4 rounded-sm border-2 border-gray-100 focus:border-[#0055A4] outline-none transition-all bg-gray-50/50 font-bold appearance-none"
                                         >
                                             <option>General Inquiry</option>
                                             <option>MSME ZED Certification</option>
@@ -199,19 +198,19 @@ const Contact = () => {
                                 </div>
 
                                 <div className="space-y-3">
-                                    <label className="text-xs font-black uppercase text-[#1a5d62] tracking-[0.2em]">Your Message</label>
+                                    <label className="text-xs font-black uppercase text-[#003366] tracking-[0.2em]">Your Message</label>
                                     <textarea
                                         rows="5"
                                         name="message"
                                         value={formData.message}
                                         onChange={handleChange}
-                                        className="w-full px-5 py-4 rounded-sm border-2 border-gray-100 focus:border-[#45b1b8] outline-none transition-all bg-gray-50/50 font-medium resize-none"
+                                        className="w-full px-5 py-4 rounded-sm border-2 border-gray-100 focus:border-[#0055A4] outline-none transition-all bg-gray-50/50 font-medium resize-none"
                                         placeholder="Describe your requirement in detail..."
                                         required
                                     ></textarea>
                                 </div>
 
-                                <button type="submit" className="w-full bg-[#45b1b8] text-white font-black py-5 rounded-sm hover:bg-[#1a5d62] transition-all shadow-xl uppercase tracking-[0.3em] text-sm flex items-center justify-center gap-3 group">
+                                <button type="submit" className="w-full bg-[#0055A4] text-white font-black py-5 rounded-sm hover:bg-[#003366] transition-all shadow-xl uppercase tracking-[0.3em] text-sm flex items-center justify-center gap-3 group">
                                     <Send size={18} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                                     Send Inquiry On WhatsApp
                                 </button>

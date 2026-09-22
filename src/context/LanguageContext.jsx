@@ -31,7 +31,7 @@ export const LanguageProvider = ({ children }) => {
             zed_what: 'What is ZED?',
             zed_official_badge: 'Official Ministry of MSME Scheme',
             zed_desc1: 'The ZED (Zero Defect Zero Effect) scheme is a flagship initiative by the Ministry of MSME, Government of India. It aims to create a culture of world-class manufacturing where quality is compromised at no stage (Zero Defect) and operations have minimal impact on our environment (Zero Effect).',
-            zed_desc2: 'As official facilitators, Shanmukha Projects helps your business adopt these standards, improving resource efficiency and positioning you as a leader in global supply chains.',
+            zed_desc2: 'As official facilitators, DS Projects helps your business adopt these standards, improving resource efficiency and positioning you as a leader in global supply chains.',
             zed_benefits: 'Key Benefits for Your Business',
             zed_levels: 'Certification Levels',
             zed_women_title: 'Support for Women Entrepreneurs',

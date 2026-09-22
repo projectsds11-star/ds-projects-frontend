@@ -82,7 +82,7 @@ const Navbar = () => {
                                 title="High Contrast"
                             >A</button>
                             <button
-                                className={`bg-white text-black px-2 py-0.5 cursor-pointer hover:bg-gray-100 text-[10px] ${!isHighContrast ? 'ring-2 ring-inset ring-[#45b1b8]' : ''}`}
+                                className={`bg-white text-black px-2 py-0.5 cursor-pointer hover:bg-gray-100 text-[10px] ${!isHighContrast ? 'ring-2 ring-inset ring-[#0055A4]' : ''}`}
                                 onClick={() => setIsHighContrast(false)}
                                 title="Normal Contrast"
                             >A</button>
@@ -106,18 +106,18 @@ const Navbar = () => {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
                     {/* Main Logo & Title */}
                     <Link to="/" className="flex items-center gap-3 md:gap-4 flex-grow pr-10 md:pr-0">
-                        <div className="w-12 h-12 md:w-24 md:h-24 shrink-0 flex items-center justify-center">
-                            <img src="/images/logo.png" alt="Shanmukha Projects Logo" className="w-full h-full object-contain" />
+                        <div className="w-20 h-20 md:w-36 md:h-36 shrink-0 flex items-center justify-center">
+                            <img src="/images/logo.png" alt="DS Projects Logo" className="w-full h-full object-contain" />
                         </div>
                         <div className="flex flex-col text-left">
-                            <h1 className="font-bold text-[#003366] text-sm md:text-2xl leading-tight uppercase tracking-tight">
-                                Shanmukha Projects
+                            <h1 className="font-bold text-[#003366] text-sm md:text-4xl leading-tight uppercase tracking-tight">
+                                DS PROJECTS
                             </h1>
-                            <p className="text-[10px] md:text-sm text-gray-800 font-semibold max-w-xs md:max-w-md">
-                                State & Central Government Contract & Project Services
+                            <p className="text-[9px] md:text-sm text-[#008f51] font-bold mt-1">
+                                MSME Sustainable (ZED) Certification & Consultancy Division
                             </p>
-                            <p className="hidden md:block text-[10px] md:text-xs text-green-700 font-medium mt-1">
-                                An Authorized Facilitator for MSME Schemes (UDYAM-AP-13-0078844)
+                            <p className="text-[9px] md:text-sm text-[#003366] font-bold mt-1">
+                                UDYAM REGISTRATION NO: UDYAM-AP-13-0077732
                             </p>
                         </div>
                     </Link>
@@ -125,7 +125,7 @@ const Navbar = () => {
                     {/* Partner Emblems (Right Side) - Hidden on mobile/tablet */}
                     <div className="hidden lg:flex items-center gap-6 grayscale opacity-90">
                         <div className="flex flex-col items-center">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Government_of_India_logo.svg/200px-Government_of_India_logo.svg.png" alt="Govt Emblem" className="h-14 w-auto object-contain mb-1" />
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Emblem_of_India.svg" alt="Govt Emblem" className="h-14 w-auto object-contain mb-1" />
                             <span className="text-[10px] font-bold text-gray-600">Facilitator</span>
                         </div>
                         <div className="h-12 w-[1px] bg-gray-300"></div>
@@ -142,15 +142,12 @@ const Navbar = () => {
                         </button>
                     </div>
                 </div>
-                {/* Mobile Small Badge for MSME below header */}
-                <div className="md:hidden px-4 py-1 bg-gray-50 border-t border-gray-100 italic text-[9px] text-center text-green-700 font-medium">
-                    An Authorized Facilitator for MSME Schemes (UDYAM-AP-13-0078844)
-                </div>
+                {/* Mobile badge removed since details are under logo now */}
             </div>
 
             {/* 3. NAVIGATION BAR (ZED Colors Gradient) */}
-            <nav className="bg-gradient-to-r from-[#a5d63f] via-[#45b1b8] to-[#45b1b8] text-white shadow-md relative z-10 border-t-4 border-[#3e9fa3]">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <nav className="bg-gradient-to-r from-[#a5d63f] via-[#0055A4] to-[#0055A4] text-white shadow-md relative z-10 border-t-4 border-[#004080]">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row md:justify-between">
                     {/* Desktop Menu */}
                     <ul className="hidden md:flex flex-wrap">
                         {navLinks.map((link) => (
@@ -173,7 +170,7 @@ const Navbar = () => {
                                         <ul className="absolute left-0 top-full w-56 bg-white text-gray-800 shadow-xl border-t-4 border-[#a5d63f] hidden group-hover:block animate-fade-in z-50">
                                             {link.dropdown.map((dropLink) => (
                                                 <li key={dropLink.path} className="border-b border-gray-100 last:border-0 hover:bg-gray-50">
-                                                    <Link to={dropLink.path} className="block px-4 py-3 text-sm font-bold text-gray-700 hover:text-[#45b1b8]">
+                                                    <Link to={dropLink.path} className="block px-4 py-3 text-sm font-bold text-gray-700 hover:text-[#0055A4]">
                                                         {dropLink.name}
                                                     </Link>
                                                 </li>
@@ -196,8 +193,14 @@ const Navbar = () => {
                         ))}
                     </ul>
 
+                    {/* Desktop Login Buttons */}
+                    <div className="hidden md:flex items-center gap-3 py-2">
+                        <a href="https://www.dsprojectss.com/employee/login" target="_blank" rel="noopener noreferrer" className="bg-white text-[#0055A4] hover:bg-gray-100 font-bold px-4 py-2 rounded-sm text-xs uppercase tracking-wider transition-colors shadow-sm whitespace-nowrap">Candidate Login</a>
+                        <a href="https://www.dsprojectss.com/admin/login" target="_blank" rel="noopener noreferrer" className="bg-[#003366] text-white hover:bg-[#124246] font-bold px-4 py-2 rounded-sm text-xs uppercase tracking-wider transition-colors shadow-sm whitespace-nowrap">Admin Login</a>
+                    </div>
+
                     {/* Mobile Menu Dropdown */}
-                    <div className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-[800px]' : 'max-h-0'}`}>
+                    <div className={`md:hidden w-full overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-[800px]' : 'max-h-0'}`}>
                         <ul className="flex flex-col py-2">
                             {navLinks.map((link) => (
                                 <li key={link.name}>
@@ -219,7 +222,7 @@ const Navbar = () => {
                                                     <ChevronDown size={16} className={`transform transition-transform ${dropdownOpen === link.name ? 'rotate-180' : ''}`} />
                                                 </button>
                                             </div>
-                                            <div className={`bg-[#3e9fa3] overflow-hidden transition-all duration-300 ${dropdownOpen === link.name ? 'max-h-40' : 'max-h-0'}`}>
+                                            <div className={`bg-[#004080] overflow-hidden transition-all duration-300 ${dropdownOpen === link.name ? 'max-h-40' : 'max-h-0'}`}>
                                                 <ul>
                                                     {link.dropdown.map((dropLink) => (
                                                         <li key={dropLink.path}>
@@ -249,6 +252,11 @@ const Navbar = () => {
                                     )}
                                 </li>
                             ))}
+                            {/* Mobile Login Buttons */}
+                            <li className="flex flex-col gap-3 px-4 py-4 border-t border-white/20 mt-2">
+                                <a href="https://www.dsprojectss.com/employee/login" target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)} className="w-full text-center bg-white text-[#0055A4] font-bold px-4 py-3 rounded-sm text-sm uppercase tracking-wider">Candidate Login</a>
+                                <a href="https://www.dsprojectss.com/admin/login" target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)} className="w-full text-center bg-[#003366] text-white font-bold px-4 py-3 rounded-sm text-sm uppercase tracking-wider">Admin Login</a>
+                            </li>
                         </ul>
                     </div>
                 </div>

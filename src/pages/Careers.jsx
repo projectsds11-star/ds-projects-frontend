@@ -31,7 +31,7 @@ const Careers = () => {
             `District: ${district}%0a` +
             `------------------------`;
 
-        const phoneNumber = '919030327779';
+        const phoneNumber = '919701529797';
         const url = `https://wa.me/${phoneNumber}?text=${whatsappMessage}`;
 
         window.open(url, '_blank');
@@ -63,7 +63,7 @@ const Careers = () => {
     return (
         <div className="bg-[#f8fafc] min-h-screen font-sans">
             {/* Page Header */}
-            <div className="bg-[#45b1b8] text-white py-16 md:py-20 border-b-4 border-[#a5d63f] relative overflow-hidden text-center">
+            <div className="bg-[#0055A4] text-white py-16 md:py-20 border-b-4 border-[#a5d63f] relative overflow-hidden text-center">
                 <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:20px_20px]"></div>
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <h1 className="text-4xl md:text-5xl font-black mb-4 tracking-tight uppercase">Join Our Mission</h1>
@@ -80,22 +80,22 @@ const Careers = () => {
                     {/* Job Listings Column */}
                     <div className="space-y-8">
                         <div className="mb-10">
-                            <h2 className="text-3xl font-black text-[#1a202c] mb-6 border-l-4 border-[#45b1b8] pl-4 uppercase tracking-tight">Open Opportunities</h2>
+                            <h2 className="text-3xl font-black text-[#1a202c] mb-6 border-l-4 border-[#0055A4] pl-4 uppercase tracking-tight">Open Opportunities</h2>
                             <div className="rounded-sm overflow-hidden shadow-xl border-4 border-white mb-8">
                                 <img src="/images/roles-info.jpg" alt="Job Roles Info" className="w-full h-auto" />
                             </div>
                         </div>
 
                         {jobs.map((job, idx) => (
-                            <div key={idx} className="bg-white p-8 rounded-sm shadow-lg border border-gray-100 hover:border-[#45b1b8] transition-all duration-300 relative group">
+                            <div key={idx} className="bg-white p-8 rounded-sm shadow-lg border border-gray-100 hover:border-[#0055A4] transition-all duration-300 relative group">
                                 <div className="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 transition-opacity">
-                                    <Briefcase size={80} className="text-[#45b1b8]" />
+                                    <Briefcase size={80} className="text-[#0055A4]" />
                                 </div>
                                 <div className="flex justify-between items-start mb-6 border-b border-gray-50 pb-4">
                                     <div>
-                                        <h3 className="text-2xl font-bold text-[#1a5d62]">{job.title}</h3>
+                                        <h3 className="text-2xl font-bold text-[#003366]">{job.title}</h3>
                                         <div className="flex items-center gap-2 mt-2">
-                                            <span className="text-[10px] font-black uppercase tracking-widest text-white bg-[#45b1b8] px-3 py-1 rounded-sm">
+                                            <span className="text-[10px] font-black uppercase tracking-widest text-white bg-[#0055A4] px-3 py-1 rounded-sm">
                                                 {job.service}
                                             </span>
                                             <span className="text-[10px] font-black uppercase tracking-widest text-[#a5d63f] bg-teal-50 border border-teal-100 px-3 py-1 rounded-sm">
@@ -119,11 +119,11 @@ const Careers = () => {
                                         <span className="font-bold">{job.salary}</span>
                                     </div>
                                     <div className="flex items-center gap-3 text-gray-600">
-                                        <div className="p-2 bg-gray-50 rounded-sm"><FileText size={18} className="text-[#45b1b8]" /></div>
+                                        <div className="p-2 bg-gray-50 rounded-sm"><FileText size={18} className="text-[#0055A4]" /></div>
                                         <span className="font-medium">{job.eligibility}</span>
                                     </div>
                                     <div className="flex items-center gap-3 text-gray-600">
-                                        <div className="p-2 bg-gray-50 rounded-sm"><Clock size={18} className="text-[#45b1b8]" /></div>
+                                        <div className="p-2 bg-gray-50 rounded-sm"><Clock size={18} className="text-[#0055A4]" /></div>
                                         <span className="font-medium">Age: {job.age}</span>
                                     </div>
                                 </div>
@@ -133,7 +133,7 @@ const Careers = () => {
                                         onClick={() => {
                                             document.getElementById('application-form').scrollIntoView({ behavior: 'smooth' });
                                         }}
-                                        className="text-[#45b1b8] font-black text-sm uppercase tracking-[0.2em] flex items-center gap-2 group-hover:gap-4 transition-all"
+                                        className="text-[#0055A4] font-black text-sm uppercase tracking-[0.2em] flex items-center gap-2 group-hover:gap-4 transition-all"
                                     >
                                         Apply for this position <ChevronRight size={16} />
                                     </button>
@@ -148,7 +148,7 @@ const Careers = () => {
                             <img src="/images/recruitment-poster.jpg" alt="Recruitment Poster" className="w-full h-auto" />
                         </div>
 
-                        <div className="bg-white p-10 rounded-sm shadow-2xl border border-gray-100 border-t-8 border-t-[#45b1b8]">
+                        <div className="bg-white p-10 rounded-sm shadow-2xl border border-gray-100 border-t-8 border-t-[#0055A4]">
                             <div className="mb-10">
                                 <h2 className="text-3xl font-black text-[#1a202c] mb-2 uppercase tracking-tight">Application Form</h2>
                                 <p className="text-gray-500 font-medium tracking-wide">Submit your details to start the process.</p>
@@ -157,12 +157,12 @@ const Careers = () => {
 
                             <form onSubmit={handleSubmit} className="space-y-6">
                                 <div className="space-y-2">
-                                    <label className="text-[10px] font-black uppercase text-[#1a5d62] tracking-[0.2em]">Position Preference</label>
+                                    <label className="text-[10px] font-black uppercase text-[#003366] tracking-[0.2em]">Position Preference</label>
                                     <select
                                         name="position"
                                         value={formData.position}
                                         onChange={handleChange}
-                                        className="w-full px-5 py-4 border-2 border-gray-50 focus:border-[#45b1b8] outline-none transition-all bg-gray-50 font-bold appearance-none rounded-sm"
+                                        className="w-full px-5 py-4 border-2 border-gray-50 focus:border-[#0055A4] outline-none transition-all bg-gray-50 font-bold appearance-none rounded-sm"
                                     >
                                         <option value="ZED Facilitator">ZED Facilitator</option>
                                         <option value="Mandal Coordinator">Mandal Coordinator</option>
@@ -170,40 +170,40 @@ const Careers = () => {
                                 </div>
 
                                 <div className="space-y-2">
-                                    <label className="text-[10px] font-black uppercase text-[#1a5d62] tracking-[0.2em]">Full Name</label>
+                                    <label className="text-[10px] font-black uppercase text-[#003366] tracking-[0.2em]">Full Name</label>
                                     <input
                                         type="text"
                                         name="name"
                                         required
                                         value={formData.name}
                                         onChange={handleChange}
-                                        className="w-full px-5 py-4 border-2 border-gray-50 focus:border-[#45b1b8] outline-none transition-all bg-gray-50 font-medium rounded-sm"
+                                        className="w-full px-5 py-4 border-2 border-gray-50 focus:border-[#0055A4] outline-none transition-all bg-gray-50 font-medium rounded-sm"
                                         placeholder="Enter your name"
                                     />
                                 </div>
 
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                     <div className="space-y-2">
-                                        <label className="text-[10px] font-black uppercase text-[#1a5d62] tracking-[0.2em]">Phone</label>
+                                        <label className="text-[10px] font-black uppercase text-[#003366] tracking-[0.2em]">Phone</label>
                                         <input
                                             type="tel"
                                             name="phone"
                                             required
                                             value={formData.phone}
                                             onChange={handleChange}
-                                            className="w-full px-5 py-4 border-2 border-gray-50 focus:border-[#45b1b8] outline-none transition-all bg-gray-50 font-medium rounded-sm"
+                                            className="w-full px-5 py-4 border-2 border-gray-50 focus:border-[#0055A4] outline-none transition-all bg-gray-50 font-medium rounded-sm"
                                             placeholder="91xxxxxxxx"
                                         />
                                     </div>
                                     <div className="space-y-2">
-                                        <label className="text-[10px] font-black uppercase text-[#1a5d62] tracking-[0.2em]">Email</label>
+                                        <label className="text-[10px] font-black uppercase text-[#003366] tracking-[0.2em]">Email</label>
                                         <input
                                             type="email"
                                             name="email"
                                             required
                                             value={formData.email}
                                             onChange={handleChange}
-                                            className="w-full px-5 py-4 border-2 border-gray-50 focus:border-[#45b1b8] outline-none transition-all bg-gray-50 font-medium rounded-sm"
+                                            className="w-full px-5 py-4 border-2 border-gray-50 focus:border-[#0055A4] outline-none transition-all bg-gray-50 font-medium rounded-sm"
                                             placeholder="mail@example.com"
                                         />
                                     </div>
@@ -211,26 +211,26 @@ const Careers = () => {
 
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                     <div className="space-y-2">
-                                        <label className="text-[10px] font-black uppercase text-[#1a5d62] tracking-[0.2em]">Qualification</label>
+                                        <label className="text-[10px] font-black uppercase text-[#003366] tracking-[0.2em]">Qualification</label>
                                         <input
                                             type="text"
                                             name="qualification"
                                             required
                                             value={formData.qualification}
                                             onChange={handleChange}
-                                            className="w-full px-5 py-4 border-2 border-gray-50 focus:border-[#45b1b8] outline-none transition-all bg-gray-50 font-medium rounded-sm"
+                                            className="w-full px-5 py-4 border-2 border-gray-50 focus:border-[#0055A4] outline-none transition-all bg-gray-50 font-medium rounded-sm"
                                             placeholder="B.Tech / MBA / Degree"
                                         />
                                     </div>
                                     <div className="space-y-2">
-                                        <label className="text-[10px] font-black uppercase text-[#1a5d62] tracking-[0.2em]">District (AP)</label>
+                                        <label className="text-[10px] font-black uppercase text-[#003366] tracking-[0.2em]">District (AP)</label>
                                         <input
                                             type="text"
                                             name="district"
                                             required
                                             value={formData.district}
                                             onChange={handleChange}
-                                            className="w-full px-5 py-4 border-2 border-gray-50 focus:border-[#45b1b8] outline-none transition-all bg-gray-50 font-medium rounded-sm"
+                                            className="w-full px-5 py-4 border-2 border-gray-50 focus:border-[#0055A4] outline-none transition-all bg-gray-50 font-medium rounded-sm"
                                             placeholder="e.g., Prakasam"
                                         />
                                     </div>
@@ -238,7 +238,7 @@ const Careers = () => {
 
                                 <button
                                     type="submit"
-                                    className="w-full bg-[#45b1b8] text-white font-black py-5 rounded-sm hover:bg-[#1a5d62] transition-all shadow-xl uppercase tracking-[0.3em] text-sm flex items-center justify-center gap-3 group mt-4"
+                                    className="w-full bg-[#0055A4] text-white font-black py-5 rounded-sm hover:bg-[#003366] transition-all shadow-xl uppercase tracking-[0.3em] text-sm flex items-center justify-center gap-3 group mt-4"
                                 >
                                     <Send size={18} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                                     Submit Application

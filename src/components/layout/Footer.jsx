@@ -22,14 +22,15 @@ const Footer = () => {
     ];
 
     return (
-        <footer className="bg-[#1a5d62] text-white border-t-8 border-[#a5d63f]">
+        <footer className="bg-[#003366] text-white border-t-8 border-[#a5d63f]">
             <div className="max-w-7xl mx-auto px-4 py-12">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
                     {/* Brand Section */}
                     <div className="col-span-1 md:col-span-1">
-                        <Link to="/" className="flex items-center gap-3">
-                            <img src="/images/logo.png" alt="Shanmukha Projects Logo" className="h-14 w-auto drop-shadow-md" />
-                            <span className="font-bold text-xl uppercase tracking-tighter">Shanmukha Projects</span>
+                        <Link to="/" className="inline-block">
+                            <div className="bg-white p-3 rounded-lg inline-flex items-center justify-center">
+                                <img src="/images/logo.png" alt="DS Projects Logo" className="h-16 w-auto" />
+                            </div>
                         </Link>
                         <div className="h-1 w-10 bg-[#a5d63f] my-4"></div>
                         <p className="text-gray-200 text-sm leading-relaxed max-w-sm">
@@ -37,7 +38,7 @@ const Footer = () => {
                         </p>
                         <div className="mt-6 p-3 bg-black/10 border border-white/10 rounded-sm">
                             <span className="text-[10px] text-gray-300 block uppercase tracking-wide">Authorized Partner</span>
-                            <span className="font-mono text-[#a5d63f] font-bold text-xs tracking-wide">UDYAM-AP-13-0078844</span>
+                            <span className="font-mono text-[#a5d63f] font-bold text-xs tracking-wide">UDYAM-AP-13-0077732</span>
                         </div>
                     </div>
 
@@ -83,13 +84,13 @@ const Footer = () => {
                                 <div className="p-2 bg-white/10 group-hover:bg-[#a5d63f] transition-colors rounded-sm">
                                     <Phone size={16} />
                                 </div>
-                                <span className="text-sm font-bold text-gray-200">+91 90303 27779</span>
+                                <span className="text-sm font-bold text-gray-200">+91 9701529797</span>
                             </div>
                             <div className="flex items-center gap-3 group">
                                 <div className="p-2 bg-white/10 group-hover:bg-[#a5d63f] transition-colors rounded-sm">
                                     <Mail size={16} />
                                 </div>
-                                <span className="text-sm font-bold text-gray-200">shanmukhaprojects999@gmail.com</span>
+                                <span className="text-sm font-bold text-gray-200">projectds11@gmail.com</span>
                             </div>
                             <a href="https://www.facebook.com/share/1HsRSGjEMu/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 group">
                                 <div className="p-2 bg-white/10 group-hover:bg-[#a5d63f] transition-colors rounded-sm">
@@ -97,19 +98,19 @@ const Footer = () => {
                                 </div>
                                 <span className="text-sm font-bold text-gray-200 group-hover:text-[#a5d63f] transition-colors">Connect on Facebook</span>
                             </a>
-                            <a href="https://youtube.com/@shanmukhaprojects?si=W6cKrLZ3qJoOa4xa" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 group">
+                            <a href="https://youtube.com/@dsprojects?si=W6cKrLZ3qJoOa4xa" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 group">
                                 <div className="p-2 bg-white/10 group-hover:bg-[#a5d63f] transition-colors rounded-sm">
                                     <Youtube size={16} />
                                 </div>
                                 <span className="text-sm font-bold text-gray-200 group-hover:text-[#a5d63f] transition-colors">Subscribe on YouTube</span>
                             </a>
-                            <a href="https://www.instagram.com/shanmukha_projects999?utm_source=qr&igsh=MXUyMmV0eXBtZnduaw==" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 group">
+                            <a href="https://www.instagram.com/projectds11?utm_source=qr&igsh=MXUyMmV0eXBtZnduaw==" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 group">
                                 <div className="p-2 bg-white/10 group-hover:bg-[#a5d63f] transition-colors rounded-sm">
                                     <Instagram size={16} />
                                 </div>
                                 <span className="text-sm font-bold text-gray-200 group-hover:text-[#a5d63f] transition-colors">Follow on Instagram</span>
                             </a>
-                            <a href="https://x.com/SShanmukha81998" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 group">
+                            <a href="https://x.com/SDS Projects81998" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 group">
                                 <div className="p-2 bg-white/10 group-hover:bg-[#a5d63f] transition-colors rounded-sm">
                                     <Twitter size={16} />
                                 </div>
@@ -128,11 +129,11 @@ const Footer = () => {
                 {/* Footer Bottom */}
                 <div className="mt-12 pt-8 border-t border-white/10 text-center">
                     <p className="text-xs text-gray-300 italic mb-6 max-w-4xl mx-auto opacity-70">
-                        Disclaimer: Shanmukha Projects is an Authorized Partner / Facilitator for various government schemes.
+                        Disclaimer: DS Projects is an Authorized Partner / Facilitator for various government schemes.
                         We are a private organization and do NOT claim to be a government department.
                     </p>
                     <p className="text-xs text-gray-200 font-medium">
-                        &copy; {new Date().getFullYear()} Shanmukha Projects. All Rights Reserved.
+                        &copy; {new Date().getFullYear()} DS Projects. All Rights Reserved.
                     </p>
                     <div className="flex justify-center gap-6 mt-4 opacity-70">
                         <span className="text-[10px] uppercase font-black text-[#a5d63f]">Quality first</span>

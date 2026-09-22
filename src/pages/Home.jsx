@@ -41,7 +41,7 @@ const Home = () => {
         <div className="bg-gray-50">
             {/* Hero Section */}
             {/* Announcement / Latest News Strip */}
-            <div className="bg-[#3e9fa3] text-white py-2 border-b-4 border-[#a5d63f]">
+            <div className="bg-[#004080] text-white py-2 border-b-4 border-[#a5d63f]">
                 <div className="max-w-7xl mx-auto px-4 flex items-center">
                     <div className="bg-[#b91c1c] text-white px-2 md:px-4 py-0.5 md:py-1 text-[10px] md:text-xs font-bold uppercase shrink-0 rounded-sm flex items-center gap-1 md:gap-2">
                         <span>New</span> <span className="animate-pulse w-1.5 h-1.5 md:w-2 md:h-2 bg-white rounded-full"></span>
@@ -112,9 +112,9 @@ const Home = () => {
             <div className="bg-white border-b border-gray-200 py-6">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex flex-wrap justify-between items-center gap-6 opacity-80">
-                        <div className="font-bold text-lg text-[#45b1b8] flex items-center gap-2"><Award className="text-[#45b1b8]" /> Quality Council of India</div>
-                        <div className="font-bold text-lg text-[#45b1b8] flex items-center gap-2"><Award className="text-[#a5d63f]" /> AZQDC</div>
-                        <div className="font-bold text-lg text-[#45b1b8] flex items-center gap-2"><Award className="text-blue-600" /> NextGen Global Services</div>
+                        <div className="font-bold text-lg text-[#0055A4] flex items-center gap-2"><Award className="text-[#0055A4]" /> Quality Council of India</div>
+                        <div className="font-bold text-lg text-[#0055A4] flex items-center gap-2"><Award className="text-[#a5d63f]" /> AZQDC</div>
+                        <div className="font-bold text-lg text-[#0055A4] flex items-center gap-2"><Award className="text-blue-600" /> NextGen Global Services</div>
                     </div>
                 </div>
             </div>
@@ -146,10 +146,10 @@ const Home = () => {
                             <h2 className="text-3xl font-bold text-[#1a202c] mb-2">
                                 Official Facilitators for MSME Development
                             </h2>
-                            <div className="h-1 w-20 bg-[#45b1b8] mb-6"></div>
+                            <div className="h-1 w-20 bg-[#0055A4] mb-6"></div>
 
                             <p className="text-[#4a5568] text-base mb-6 leading-relaxed text-justify">
-                                Shanmukha State & Central Government Contract & Project Services is dedicated to uplifting the MSME sector in Andhra Pradesh.
+                                DS Projects is dedicated to uplifting the MSME sector in Andhra Pradesh.
                                 As authorized partners, we assist businesses in achieving ZED Certification, ensuring they meet global quality standards.
                             </p>
                             <ul className="space-y-3 mb-8 bg-gray-50 p-6 rounded-sm border border-gray-200">
@@ -165,7 +165,7 @@ const Home = () => {
                                     </li>
                                 ))}
                             </ul>
-                            <Link to="/about" className="text-[#45b1b8] font-extrabold hover:underline inline-flex items-center">
+                            <Link to="/about" className="text-[#0055A4] font-extrabold hover:underline inline-flex items-center">
                                 Learn more about our mission
                                 <ArrowRight className="ml-2 h-4 w-4" />
                             </Link>
@@ -235,7 +235,7 @@ const Home = () => {
                 <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="bg-white p-8 md:p-10 rounded-sm shadow-md border-t-4 border-[#003366]">
                         <div className="text-center mb-8">
-                            <span className="text-[#45b1b8] font-black tracking-widest uppercase text-xs">Quality Council of India Initiative</span>
+                            <span className="text-[#0055A4] font-black tracking-widest uppercase text-xs">Quality Council of India Initiative</span>
                             <h2 className="text-3xl font-bold text-[#1a202c] mt-2">Sarpanch Samvaad</h2>
                             <div className="w-16 h-1 bg-[#a5d63f] mx-auto mt-3"></div>
                         </div>
@@ -252,24 +252,24 @@ const Home = () => {
 
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
                             <div className="text-center p-4">
-                                <CheckCircle className="text-[#45b1b8] h-8 w-8 mx-auto mb-2" />
+                                <CheckCircle className="text-[#0055A4] h-8 w-8 mx-auto mb-2" />
                                 <h4 className="font-bold text-[#2d3748]">Networking</h4>
                                 <p className="text-xs text-gray-500">Connecting Sarpanchs</p>
                             </div>
                             <div className="text-center p-4 border-l border-r border-gray-100">
-                                <CheckCircle className="text-[#45b1b8] h-8 w-8 mx-auto mb-2" />
+                                <CheckCircle className="text-[#0055A4] h-8 w-8 mx-auto mb-2" />
                                 <h4 className="font-bold text-[#2d3748]">Capacity Building</h4>
                                 <p className="text-xs text-gray-500">Training & Skills</p>
                             </div>
                             <div className="text-center p-4">
-                                <CheckCircle className="text-[#45b1b8] h-8 w-8 mx-auto mb-2" />
+                                <CheckCircle className="text-[#0055A4] h-8 w-8 mx-auto mb-2" />
                                 <h4 className="font-bold text-[#2d3748]">Development</h4>
                                 <p className="text-xs text-gray-500">Village Growth</p>
                             </div>
                         </div>
 
                         <div className="text-center">
-                            <Link to="/sarpanch-samvad" className="inline-block px-8 py-3 text-sm font-black text-white bg-[#45b1b8] hover:bg-[#348a8f] rounded-sm transition-colors uppercase tracking-widest">
+                            <Link to="/sarpanch-samvad" className="inline-block px-8 py-3 text-sm font-black text-white bg-[#0055A4] hover:bg-[#348a8f] rounded-sm transition-colors uppercase tracking-widest">
                                 Learn More
                             </Link>
                         </div>
@@ -291,8 +291,8 @@ const Home = () => {
                                 transition={{ delay: i * 0.1 }}
                                 className="bg-white p-4 text-center border border-gray-100 shadow-sm"
                             >
-                                <div className="text-[#45b1b8] flex justify-center mb-2">{item.icon}</div>
-                                <h5 className="font-bold text-xs text-[#1a5d62] uppercase tracking-tighter mb-1">{item.title}</h5>
+                                <div className="text-[#0055A4] flex justify-center mb-2">{item.icon}</div>
+                                <h5 className="font-bold text-xs text-[#003366] uppercase tracking-tighter mb-1">{item.title}</h5>
                                 <p className="text-[10px] text-gray-500 leading-tight">{item.desc}</p>
                             </motion.div>
                         ))}
@@ -305,7 +305,7 @@ const Home = () => {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex flex-col lg:flex-row gap-8 items-center bg-[#f0fdfa] border border-teal-100 p-6 md:p-10 rounded-sm">
                         <div className="lg:w-1/3">
-                            <div className="bg-[#45b1b8] text-white p-6 rounded-sm text-center border-b-4 border-[#a5d63f]">
+                            <div className="bg-[#0055A4] text-white p-6 rounded-sm text-center border-b-4 border-[#a5d63f]">
                                 <h3 className="text-xl font-bold mb-2">LATEST EVENT</h3>
                                 <p className="text-white text-xs font-black uppercase tracking-widest">Sept 2025 | New Delhi</p>
                             </div>
@@ -316,16 +316,16 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="lg:w-2/3">
-                            <h2 className="text-2xl md:text-3xl font-bold text-[#45b1b8] mb-4">
+                            <h2 className="text-2xl md:text-3xl font-bold text-[#0055A4] mb-4">
                                 National Quality Conclave: Sarpanch Samvaad
                             </h2>
                             <p className="text-gray-700 mb-6 leading-relaxed">
                                 Inaugurated by Union Minister <strong>Shri C. R. Patil</strong>, the conclave brought together 75 distinguished Sarpanchs from 22 states to discuss digital empowerment and quality governance in rural India.
                             </p>
                             <div className="flex flex-wrap gap-4 items-center">
-                                <span className="bg-teal-100 text-[#45b1b8] text-xs font-bold px-3 py-1 border border-teal-200 uppercase">QCI Initiative</span>
+                                <span className="bg-teal-100 text-[#0055A4] text-xs font-bold px-3 py-1 border border-teal-200 uppercase">QCI Initiative</span>
                                 <span className="bg-lime-100 text-[#a5d63f] text-xs font-black px-3 py-1 border border-lime-200 uppercase">Digital Inclusion</span>
-                                <Link to="/conclave-2025" className="text-[#45b1b8] font-black text-sm hover:underline flex items-center ml-auto">
+                                <Link to="/conclave-2025" className="text-[#0055A4] font-black text-sm hover:underline flex items-center ml-auto">
                                     VIEW FULL CONCLAVE REPORT <ArrowRight className="ml-2 h-4 w-4" />
                                 </Link>
                             </div>
@@ -347,7 +347,7 @@ const Home = () => {
                             { label: "Govt. Projects", value: "12+" }
                         ].map((stat, i) => (
                             <motion.div key={i} variants={fadeIn} className="bg-white border border-gray-100 p-6 text-center shadow-sm">
-                                <div className="text-3xl font-black text-[#45b1b8] mb-1">{stat.value}</div>
+                                <div className="text-3xl font-black text-[#0055A4] mb-1">{stat.value}</div>
                                 <div className="text-[10px] font-bold text-gray-500 uppercase tracking-widest">{stat.label}</div>
                             </motion.div>
                         ))}
@@ -360,7 +360,7 @@ const Home = () => {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <motion.div {...fadeIn} className="text-center max-w-3xl mx-auto mb-12">
                         <h2 className="text-3xl font-bold text-[#1a202c] mb-4">Core Services</h2>
-                        <div className="h-1 w-20 bg-[#45b1b8] mx-auto mb-4"></div>
+                        <div className="h-1 w-20 bg-[#0055A4] mx-auto mb-4"></div>
                         <p className="text-[#4a5568]">Comprehensive support for MSMEs and Government Initiatives</p>
                     </motion.div>
 
@@ -391,14 +391,14 @@ const Home = () => {
                             <motion.div
                                 key={index}
                                 variants={fadeIn}
-                                className="bg-white border border-gray-200 p-6 hover:shadow-lg transition-shadow border-t-4 border-t-gray-200 hover:border-t-[#45b1b8]"
+                                className="bg-white border border-gray-200 p-6 hover:shadow-lg transition-shadow border-t-4 border-t-gray-200 hover:border-t-[#0055A4]"
                             >
                                 <div className={`mb-4 ${service.iconColor}`}>
                                     <Award className="h-10 w-10" />
                                 </div>
                                 <h3 className="text-lg font-bold text-[#1a202c] mb-2">{service.title}</h3>
                                 <p className="text-[#4a5568] text-sm mb-4 leading-relaxed">{service.desc}</p>
-                                <Link to="/services" className="text-sm font-black text-[#45b1b8] hover:underline uppercase tracking-wide">
+                                <Link to="/services" className="text-sm font-black text-[#0055A4] hover:underline uppercase tracking-wide">
                                     Read More &rarr;
                                 </Link>
                             </motion.div>
@@ -408,7 +408,7 @@ const Home = () => {
             </section>
 
             {/* CTA - Official Banner Style */}
-            <section className="py-12 bg-[#45b1b8]">
+            <section className="py-12 bg-[#0055A4]">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h2 className="text-2xl md:text-3xl font-bold text-white mb-6">Ready to Scale Your MSME?</h2>
                     <p className="text-gray-100 mb-8 max-w-2xl mx-auto">

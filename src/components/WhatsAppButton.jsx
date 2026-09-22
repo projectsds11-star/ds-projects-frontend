@@ -1,14 +1,14 @@
 import React from 'react';
 
 const WhatsAppButton = () => {
-    const phoneNumber = '919030327779'; // International format
+    const phoneNumber = '919701529797'; // International format
     const message = 'Hello, I have an inquiry.'; // Optional default message
 
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
     return (
         <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-2 group">
-            <div className="bg-white text-[#1a5d62] px-4 py-2 rounded-lg shadow-xl text-xs font-black opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none mb-1 border border-gray-100 uppercase tracking-widest">
+            <div className="bg-white text-[#003366] px-4 py-2 rounded-lg shadow-xl text-xs font-black opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none mb-1 border border-gray-100 uppercase tracking-widest">
                 Need Help? Chat with us!
                 <div className="absolute -bottom-1 right-5 w-2 h-2 bg-white rotate-45 border-b border-r border-gray-100"></div>
             </div>

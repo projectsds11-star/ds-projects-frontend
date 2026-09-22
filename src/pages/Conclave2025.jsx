@@ -8,11 +8,11 @@ const Conclave2025 = () => {
     return (
         <div className="bg-[#f8fafc] min-h-screen font-sans">
             {/* Header / Hero Section */}
-            <div className="bg-[#45b1b8] text-white py-12 md:py-16 border-b-4 border-[#a5d63f]">
+            <div className="bg-[#0055A4] text-white py-12 md:py-16 border-b-4 border-[#a5d63f]">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex flex-col md:flex-row gap-6 items-start md:items-center">
                         <div className="flex-1">
-                            <div className="inline-block bg-white text-[#45b1b8] px-3 py-1 mb-4 rounded-sm text-xs font-bold uppercase tracking-wider border-l-4 border-[#138808]">
+                            <div className="inline-block bg-white text-[#0055A4] px-3 py-1 mb-4 rounded-sm text-xs font-bold uppercase tracking-wider border-l-4 border-[#138808]">
                                 {t('conclave_badge')}
                             </div>
                             <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
@@ -61,7 +61,7 @@ const Conclave2025 = () => {
                             <p className="text-sm font-bold text-gray-600 uppercase">States Represented</p>
                         </div>
                         <div className="p-4 bg-gray-50 border border-gray-200">
-                            <h4 className="text-3xl font-bold text-[#45b1b8] mb-1">60,000+</h4>
+                            <h4 className="text-3xl font-bold text-[#0055A4] mb-1">60,000+</h4>
                             <p className="text-sm font-bold text-gray-600 uppercase">Onboarded on Mobile App</p>
                         </div>
                     </div>
@@ -82,11 +82,11 @@ const Conclave2025 = () => {
 
                 {/* Dignitaries Perspectives */}
                 <div className="mb-12">
-                    <h2 className="text-2xl font-bold text-[#1a202c] mb-6 border-l-4 border-[#45b1b8] pl-4 uppercase tracking-wide">Government Perspectives & Strategic Vision</h2>
+                    <h2 className="text-2xl font-bold text-[#1a202c] mb-6 border-l-4 border-[#0055A4] pl-4 uppercase tracking-wide">Government Perspectives & Strategic Vision</h2>
                     <div className="space-y-6">
                         {/* Vivek Bharadwaj */}
-                        <div className="bg-white p-6 border border-gray-200 border-l-8 border-l-[#3e9fa3] shadow-sm">
-                            <h3 className="font-bold text-[#3e9fa3] mb-2 uppercase text-sm tracking-widest">Shri Vivek Bharadwaj, Secretary, Ministry of Panchayati Raj</h3>
+                        <div className="bg-white p-6 border border-gray-200 border-l-8 border-l-[#004080] shadow-sm">
+                            <h3 className="font-bold text-[#004080] mb-2 uppercase text-sm tracking-widest">Shri Vivek Bharadwaj, Secretary, Ministry of Panchayati Raj</h3>
                             <p className="text-gray-700 italic leading-relaxed">
                                 "Through e-governance and ICT tools like <strong>E-Gram Swaraj, PAI, and Sabha Saar</strong>, the Ministry is working to strengthen grassroots governance. To build truly Viksit Gram Panchayats, we must strengthen Village Water and Sanitation Committees, adopt e-governance for transparency, and embed <strong>Gunvatta</strong> (Quality) in every initiative."
                             </p>
