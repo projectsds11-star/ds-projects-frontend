@@ -41,7 +41,7 @@ const Home = () => {
         <div className="bg-gray-50">
             {/* Hero Section */}
             {/* Announcement / Latest News Strip */}
-            <div className="bg-[#004080] text-white py-2 border-b-4 border-[#a5d63f]">
+            <div className="bg-[#004080] text-white py-2 border-b-4 border-[#F59E0B]">
                 <div className="max-w-7xl mx-auto px-4 flex items-center">
                     <div className="bg-[#b91c1c] text-white px-2 md:px-4 py-0.5 md:py-1 text-[10px] md:text-xs font-bold uppercase shrink-0 rounded-sm flex items-center gap-1 md:gap-2">
                         <span>New</span> <span className="animate-pulse w-1.5 h-1.5 md:w-2 md:h-2 bg-white rounded-full"></span>
@@ -81,22 +81,22 @@ const Home = () => {
                         transition={{ duration: 0.8 }}
                         className="max-w-4xl"
                     >
-                        <div className="inline-block px-2 py-0.5 bg-[#a5d63f] text-[#003366] font-bold text-[10px] md:text-xs uppercase tracking-wider mb-3 md:mb-4 rounded-sm">
+                        <div className="inline-block px-2 py-0.5 bg-[#F59E0B] text-[#003366] font-bold text-[10px] md:text-xs uppercase tracking-wider mb-3 md:mb-4 rounded-sm">
                             {t('hero_badge')}
                         </div>
                         <h1 className="text-2xl md:text-5xl font-bold leading-tight mb-3 md:mb-4 drop-shadow-lg">
                             {t('hero_title').split('ZED Certification').map((part, i, arr) => (
                                 <React.Fragment key={i}>
                                     {part}
-                                    {i < arr.length - 1 && <span className="text-[#a5d63f]">ZED Certification</span>}
+                                    {i < arr.length - 1 && <span className="text-[#F59E0B]">ZED Certification</span>}
                                 </React.Fragment>
                             ))}
                         </h1>
-                        <p className="text-sm md:text-lg text-gray-100 mb-6 md:mb-8 leading-relaxed border-l-4 border-[#a5d63f] pl-3 md:pl-4 drop-shadow-md">
+                        <p className="text-sm md:text-lg text-gray-100 mb-6 md:mb-8 leading-relaxed border-l-4 border-[#F59E0B] pl-3 md:pl-4 drop-shadow-md">
                             {t('hero_desc')}
                         </p>
                         <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
-                            <Link to="/zed-certification" className="inline-flex items-center justify-center px-5 py-2.5 md:px-6 md:py-3 text-sm md:text-base font-extrabold text-[#1a202c] bg-[#a5d63f] hover:bg-[#94c135] transition-colors rounded-sm shadow-md">
+                            <Link to="/zed-certification" className="inline-flex items-center justify-center px-5 py-2.5 md:px-6 md:py-3 text-sm md:text-base font-extrabold text-[#1a202c] bg-[#F59E0B] hover:bg-[#D97706] transition-colors rounded-sm shadow-md">
                                 {t('hero_btn_zed')}
                                 <ArrowRight className="ml-2 h-4 w-4 md:h-5 md:w-5" />
                             </Link>
@@ -113,7 +113,7 @@ const Home = () => {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex flex-wrap justify-between items-center gap-6 opacity-80">
                         <div className="font-bold text-lg text-[#0055A4] flex items-center gap-2"><Award className="text-[#0055A4]" /> Quality Council of India</div>
-                        <div className="font-bold text-lg text-[#0055A4] flex items-center gap-2"><Award className="text-[#a5d63f]" /> AZQDC</div>
+                        <div className="font-bold text-lg text-[#0055A4] flex items-center gap-2"><Award className="text-[#F59E0B]" /> AZQDC</div>
                         <div className="font-bold text-lg text-[#0055A4] flex items-center gap-2"><Award className="text-blue-600" /> NextGen Global Services</div>
                     </div>
                 </div>
@@ -190,10 +190,10 @@ const Home = () => {
                         <div className="text-center mb-8">
                             <span className="text-[#138808] font-black tracking-widest uppercase text-xs">{t('zed_official_badge')}</span>
                             <h2 className="text-3xl font-bold text-[#1a202c] mt-2">{t('zed_title')}</h2>
-                            <div className="w-16 h-1 bg-[#a5d63f] mx-auto mt-3"></div>
+                            <div className="w-16 h-1 bg-[#F59E0B] mx-auto mt-3"></div>
                         </div>
 
-                        <div className="bg-[#f0fdf4] p-6 rounded-sm border border-green-100 mb-8 text-center">
+                        <div className="bg-[#FFFBEB] p-6 rounded-sm border border-amber-100 mb-8 text-center">
                             <h3 className="font-bold text-xl text-[#166534] mb-4">{t('zed_title')} (Zero Defect Zero Effect)</h3>
                             <p className="text-[#2d3748] leading-relaxed text-lg mb-2">
                                 {t('zed_desc1')}
@@ -237,10 +237,10 @@ const Home = () => {
                         <div className="text-center mb-8">
                             <span className="text-[#0055A4] font-black tracking-widest uppercase text-xs">Quality Council of India Initiative</span>
                             <h2 className="text-3xl font-bold text-[#1a202c] mt-2">Sarpanch Samvaad</h2>
-                            <div className="w-16 h-1 bg-[#a5d63f] mx-auto mt-3"></div>
+                            <div className="w-16 h-1 bg-[#F59E0B] mx-auto mt-3"></div>
                         </div>
 
-                        <div className="bg-[#f0fdf4] p-6 rounded-sm border border-green-100 mb-8 text-center">
+                        <div className="bg-[#FFFBEB] p-6 rounded-sm border border-amber-100 mb-8 text-center">
                             <h3 className="font-bold text-xl text-[#166534] mb-4">సర్పంచ్ సంవాద్ (Sarpanch Samvaad)</h3>
                             <p className="text-[#2d3748] leading-relaxed text-lg mb-2">
                                 ఇది భారత నాణ్యత మండలి (QCI) ద్వారా సర్పంచులను డిజిటల్గా అనుసంధానించే, నైపుణ్యాన్ని పెంచే మరియు గ్రామాభివృద్ధిని ప్రదర్శించే ఒక వినూత్న మొబైల్ అప్లికేషన్.
@@ -305,7 +305,7 @@ const Home = () => {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex flex-col lg:flex-row gap-8 items-center bg-[#f0fdfa] border border-teal-100 p-6 md:p-10 rounded-sm">
                         <div className="lg:w-1/3">
-                            <div className="bg-[#0055A4] text-white p-6 rounded-sm text-center border-b-4 border-[#a5d63f]">
+                            <div className="bg-[#0055A4] text-white p-6 rounded-sm text-center border-b-4 border-[#F59E0B]">
                                 <h3 className="text-xl font-bold mb-2">LATEST EVENT</h3>
                                 <p className="text-white text-xs font-black uppercase tracking-widest">Sept 2025 | New Delhi</p>
                             </div>
@@ -324,7 +324,7 @@ const Home = () => {
                             </p>
                             <div className="flex flex-wrap gap-4 items-center">
                                 <span className="bg-teal-100 text-[#0055A4] text-xs font-bold px-3 py-1 border border-teal-200 uppercase">QCI Initiative</span>
-                                <span className="bg-lime-100 text-[#a5d63f] text-xs font-black px-3 py-1 border border-lime-200 uppercase">Digital Inclusion</span>
+                                <span className="bg-amber-100 text-[#F59E0B] text-xs font-black px-3 py-1 border border-amber-200 uppercase">Digital Inclusion</span>
                                 <Link to="/conclave-2025" className="text-[#0055A4] font-black text-sm hover:underline flex items-center ml-auto">
                                     VIEW FULL CONCLAVE REPORT <ArrowRight className="ml-2 h-4 w-4" />
                                 </Link>
@@ -415,7 +415,7 @@ const Home = () => {
                         Join thousands of businesses adopting the ZED model for quality and sustainability.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <Link to="/contact" className="px-8 py-3 bg-[#a5d63f] hover:bg-[#94c135] text-[#1a202c] font-black text-sm uppercase rounded-sm shadow-sm">
+                        <Link to="/contact" className="px-8 py-3 bg-[#F59E0B] hover:bg-[#D97706] text-[#1a202c] font-black text-sm uppercase rounded-sm shadow-sm">
                             Get Started
                         </Link>
                         <Link to="/careers" className="px-8 py-3 bg-transparent border border-white text-white font-bold text-sm uppercase hover:bg-white/10 rounded-sm">

@@ -113,7 +113,7 @@ const Navbar = () => {
                             <h1 className="font-bold text-[#003366] text-sm md:text-4xl leading-tight uppercase tracking-tight">
                                 DS PROJECTS
                             </h1>
-                            <p className="text-[9px] md:text-sm text-[#008f51] font-bold mt-1">
+                            <p className="text-[9px] md:text-sm text-[#0055A4] font-bold mt-1">
                                 MSME Sustainable (ZED) Certification & Consultancy Division
                             </p>
                             <p className="text-[9px] md:text-sm text-[#003366] font-bold mt-1">
@@ -131,7 +131,7 @@ const Navbar = () => {
                         <div className="h-12 w-[1px] bg-gray-300"></div>
                         <div className="flex flex-col items-center">
                             <span className="text-xl font-black text-orange-500 tracking-tighter">MSME</span>
-                            <span className="text-[10px] uppercase font-bold text-green-700">ZED Certification</span>
+                            <span className="text-[10px] uppercase font-bold text-[#F59E0B]">ZED Certification</span>
                         </div>
                     </div>
 
@@ -146,7 +146,7 @@ const Navbar = () => {
             </div>
 
             {/* 3. NAVIGATION BAR (ZED Colors Gradient) */}
-            <nav className="bg-gradient-to-r from-[#a5d63f] via-[#0055A4] to-[#0055A4] text-white shadow-md relative z-10 border-t-4 border-[#004080]">
+            <nav className="bg-gradient-to-r from-[#003366] to-[#0055A4] text-white shadow-md relative z-10 border-t-4 border-[#F59E0B]">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row md:justify-between">
                     {/* Desktop Menu */}
                     <ul className="hidden md:flex flex-wrap">
@@ -167,7 +167,7 @@ const Navbar = () => {
                                         >
                                             <ChevronDown size={14} />
                                         </button>
-                                        <ul className="absolute left-0 top-full w-56 bg-white text-gray-800 shadow-xl border-t-4 border-[#a5d63f] hidden group-hover:block animate-fade-in z-50">
+                                        <ul className="absolute left-0 top-full w-56 bg-white text-gray-800 shadow-xl border-t-4 border-[#F59E0B] hidden group-hover:block animate-fade-in z-50">
                                             {link.dropdown.map((dropLink) => (
                                                 <li key={dropLink.path} className="border-b border-gray-100 last:border-0 hover:bg-gray-50">
                                                     <Link to={dropLink.path} className="block px-4 py-3 text-sm font-bold text-gray-700 hover:text-[#0055A4]">

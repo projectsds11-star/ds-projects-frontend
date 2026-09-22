@@ -63,11 +63,11 @@ const Careers = () => {
     return (
         <div className="bg-[#f8fafc] min-h-screen font-sans">
             {/* Page Header */}
-            <div className="bg-[#0055A4] text-white py-16 md:py-20 border-b-4 border-[#a5d63f] relative overflow-hidden text-center">
+            <div className="bg-[#0055A4] text-white py-16 md:py-20 border-b-4 border-[#F59E0B] relative overflow-hidden text-center">
                 <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:20px_20px]"></div>
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <h1 className="text-4xl md:text-5xl font-black mb-4 tracking-tight uppercase">Join Our Mission</h1>
-                    <div className="h-1 w-20 bg-[#a5d63f] mx-auto mb-6"></div>
+                    <div className="h-1 w-20 bg-[#F59E0B] mx-auto mb-6"></div>
                     <p className="text-xl text-blue-50 max-w-2xl mx-auto leading-relaxed font-medium">
                         Build your career while empowering rural India and the MSME sector.
                     </p>
@@ -98,7 +98,7 @@ const Careers = () => {
                                             <span className="text-[10px] font-black uppercase tracking-widest text-white bg-[#0055A4] px-3 py-1 rounded-sm">
                                                 {job.service}
                                             </span>
-                                            <span className="text-[10px] font-black uppercase tracking-widest text-[#a5d63f] bg-teal-50 border border-teal-100 px-3 py-1 rounded-sm">
+                                            <span className="text-[10px] font-black uppercase tracking-widest text-[#F59E0B] bg-teal-50 border border-teal-100 px-3 py-1 rounded-sm">
                                                 {job.type}
                                             </span>
                                         </div>
@@ -111,11 +111,11 @@ const Careers = () => {
 
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-sm mb-10">
                                     <div className="flex items-center gap-3 text-gray-600">
-                                        <div className="p-2 bg-gray-50 rounded-sm"><MapPin size={18} className="text-[#a5d63f]" /></div>
+                                        <div className="p-2 bg-gray-50 rounded-sm"><MapPin size={18} className="text-[#F59E0B]" /></div>
                                         <span className="font-bold">{job.location}</span>
                                     </div>
                                     <div className="flex items-center gap-3 text-gray-600">
-                                        <div className="p-2 bg-gray-50 rounded-sm"><IndianRupee size={18} className="text-[#a5d63f]" /></div>
+                                        <div className="p-2 bg-gray-50 rounded-sm"><IndianRupee size={18} className="text-[#F59E0B]" /></div>
                                         <span className="font-bold">{job.salary}</span>
                                     </div>
                                     <div className="flex items-center gap-3 text-gray-600">
@@ -152,7 +152,7 @@ const Careers = () => {
                             <div className="mb-10">
                                 <h2 className="text-3xl font-black text-[#1a202c] mb-2 uppercase tracking-tight">Application Form</h2>
                                 <p className="text-gray-500 font-medium tracking-wide">Submit your details to start the process.</p>
-                                <div className="w-16 h-1 bg-[#a5d63f] mt-4"></div>
+                                <div className="w-16 h-1 bg-[#F59E0B] mt-4"></div>
                             </div>
 
                             <form onSubmit={handleSubmit} className="space-y-6">

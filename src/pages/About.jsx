@@ -6,11 +6,11 @@ const About = () => {
     return (
         <div className="bg-[#f8fafc] min-h-screen font-sans">
             {/* Page Header */}
-            <div className="bg-[#0055A4] text-white py-12 md:py-20 border-b-4 border-[#a5d63f] relative overflow-hidden">
+            <div className="bg-[#0055A4] text-white py-12 md:py-20 border-b-4 border-[#F59E0B] relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:20px_20px]"></div>
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
                     <h1 className="text-4xl md:text-5xl font-black mb-4 tracking-tight uppercase">About Our Organization</h1>
-                    <div className="h-1 w-20 bg-[#a5d63f] mx-auto mb-6"></div>
+                    <div className="h-1 w-20 bg-[#F59E0B] mx-auto mb-6"></div>
                     <p className="text-xl text-blue-50 max-w-2xl mx-auto leading-relaxed font-medium">
                         Bridging the gap between Government Initiatives and Grassroots Implementation.
                     </p>
@@ -55,11 +55,11 @@ const About = () => {
 
                     <div className="space-y-12">
                         <div>
-                            <h2 className="text-3xl font-bold text-[#1a202c] mb-6 border-l-4 border-[#a5d63f] pl-4 uppercase tracking-tight">Our Mission</h2>
+                            <h2 className="text-3xl font-bold text-[#1a202c] mb-6 border-l-4 border-[#F59E0B] pl-4 uppercase tracking-tight">Our Mission</h2>
                             <p className="text-lg text-gray-700 leading-relaxed mb-6 text-justify">
                                 To transform the MSME landscape in Andhra Pradesh by facilitating access to the ZED (Zero Defect Zero Effect) certification, promoting sustainable practices, and ensuring every eligible business can leverage government incentives for growth.
                             </p>
-                            <div className="bg-[#f0fdfa] p-8 border-l-4 border-[#a5d63f] italic text-gray-800 text-lg shadow-sm">
+                            <div className="bg-[#f0fdfa] p-8 border-l-4 border-[#F59E0B] italic text-gray-800 text-lg shadow-sm">
                                 "Empowering local businesses and governance through quality, transparency, and sustainable development."
                             </div>
                         </div>
@@ -73,7 +73,7 @@ const About = () => {
                 {/* Values Section */}
                 <div className="bg-[#003366] text-white rounded-sm p-12 md:p-16">
                     <div className="text-center mb-16">
-                        <h2 className="text-3xl font-black uppercase tracking-widest text-[#a5d63f]">Why Choose Us?</h2>
+                        <h2 className="text-3xl font-black uppercase tracking-widest text-[#F59E0B]">Why Choose Us?</h2>
                         <div className="w-20 h-1 bg-white mx-auto mt-4"></div>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -84,7 +84,7 @@ const About = () => {
                             { title: "Proven Track Record", icon: <ShieldCheck /> }
                         ].map((item, i) => (
                             <div key={i} className="bg-black/10 p-8 rounded-sm border border-white/10 text-center hover:bg-black/20 transition-colors group">
-                                <div className="w-16 h-16 bg-[#a5d63f] text-[#003366] rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+                                <div className="w-16 h-16 bg-[#F59E0B] text-[#003366] rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
                                     {React.cloneElement(item.icon, { size: 32 })}
                                 </div>
                                 <h3 className="font-bold text-lg leading-tight uppercase tracking-tight">{item.title}</h3>

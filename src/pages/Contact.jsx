@@ -38,11 +38,11 @@ const Contact = () => {
     return (
         <div className="bg-[#f8fafc] min-h-screen font-sans">
             {/* Page Header */}
-            <div className="bg-[#0055A4] text-white py-16 md:py-20 border-b-4 border-[#a5d63f] relative overflow-hidden text-center">
+            <div className="bg-[#0055A4] text-white py-16 md:py-20 border-b-4 border-[#F59E0B] relative overflow-hidden text-center">
                 <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:20px_20px]"></div>
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <h1 className="text-4xl md:text-5xl font-black mb-4 tracking-tight uppercase">Get in Touch</h1>
-                    <div className="h-1 w-20 bg-[#a5d63f] mx-auto mb-6"></div>
+                    <div className="h-1 w-20 bg-[#F59E0B] mx-auto mb-6"></div>
                     <p className="text-xl text-blue-50 max-w-2xl mx-auto leading-relaxed font-medium">
                         Contact us for expert ZED Certification guidance and Government Project facilitation.
                     </p>
@@ -72,7 +72,7 @@ const Contact = () => {
                                 </div>
 
                                 <div className="flex items-start gap-5 pb-8 border-b border-gray-100">
-                                    <div className="bg-[#a5d63f] p-4 rounded-full text-white shadow-md">
+                                    <div className="bg-[#F59E0B] p-4 rounded-full text-white shadow-md">
                                         <Phone size={24} />
                                     </div>
                                     <div>
@@ -132,7 +132,7 @@ const Contact = () => {
                             <div className="mb-10">
                                 <h2 className="text-3xl font-black text-[#1a202c] mb-2 uppercase tracking-tight">Send a Message</h2>
                                 <p className="text-gray-500 font-medium">We usually respond within 24 business hours.</p>
-                                <div className="w-16 h-1 bg-[#a5d63f] mt-4"></div>
+                                <div className="w-16 h-1 bg-[#F59E0B] mt-4"></div>
                             </div>
 
                             <form className="space-y-8" onSubmit={handleSubmit}>

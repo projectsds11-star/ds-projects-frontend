@@ -9,10 +9,10 @@ const ZEDCertification = () => {
     return (
         <div className="bg-gray-50 min-h-screen font-sans">
             {/* Page Header - ZED Theme */}
-            <div className="bg-[#0055A4] text-white py-16 md:py-20 border-b-4 border-[#a5d63f] relative overflow-hidden">
+            <div className="bg-[#0055A4] text-white py-16 md:py-20 border-b-4 border-[#F59E0B] relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:20px_20px]"></div>
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-                    <div className="inline-block bg-white text-[#0055A4] px-4 py-1 rounded-sm text-xs font-black uppercase tracking-widest mb-6 border-l-4 border-[#a5d63f]">
+                    <div className="inline-block bg-white text-[#0055A4] px-4 py-1 rounded-sm text-xs font-black uppercase tracking-widest mb-6 border-l-4 border-[#F59E0B]">
                         {t('zed_official_badge')}
                     </div>
                     <h1 className="text-4xl md:text-6xl font-black mb-6 tracking-tight">{t('zed_title')}</h1>
@@ -43,7 +43,7 @@ const ZEDCertification = () => {
                 <div className="mb-20">
                     <div className="text-center mb-12">
                         <h2 className="text-3xl font-bold text-[#1a202c] uppercase tracking-wide">{t('zed_benefits')}</h2>
-                        <div className="w-24 h-1 bg-[#a5d63f] mx-auto mt-4"></div>
+                        <div className="w-24 h-1 bg-[#F59E0B] mx-auto mt-4"></div>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {[
@@ -138,7 +138,7 @@ const ZEDCertification = () => {
 
                     <div className="relative z-10">
                         <div className="text-center mb-16">
-                            <h2 className="text-3xl md:text-4xl font-black mb-4 uppercase tracking-widest text-[#a5d63f]">How to Get Started?</h2>
+                            <h2 className="text-3xl md:text-4xl font-black mb-4 uppercase tracking-widest text-[#F59E0B]">How to Get Started?</h2>
                             <p className="text-teal-50 text-xl">Follow our simple 4-step path to ZED certification</p>
                         </div>
 
@@ -150,7 +150,7 @@ const ZEDCertification = () => {
                                 { step: "04", title: "Certification", desc: "Receive your certificate and start availing fiscal benefits." },
                             ].map((s, i) => (
                                 <div key={i} className="text-center group">
-                                    <div className="w-16 h-16 bg-[#a5d63f] text-[#003366] rounded-full flex items-center justify-center text-2xl font-black mx-auto mb-6 group-hover:scale-110 transition-transform shadow-lg">
+                                    <div className="w-16 h-16 bg-[#F59E0B] text-[#003366] rounded-full flex items-center justify-center text-2xl font-black mx-auto mb-6 group-hover:scale-110 transition-transform shadow-lg">
                                         {s.step}
                                     </div>
                                     <h4 className="text-xl font-bold mb-3">{s.title}</h4>
@@ -160,7 +160,7 @@ const ZEDCertification = () => {
                         </div>
 
                         <div className="text-center">
-                            <Link to="/contact" className="inline-block bg-white text-[#003366] font-black px-10 py-4 rounded-sm hover:bg-[#a5d63f] hover:text-white transition-all duration-300 uppercase tracking-widest text-sm shadow-xl">
+                            <Link to="/contact" className="inline-block bg-white text-[#003366] font-black px-10 py-4 rounded-sm hover:bg-[#F59E0B] hover:text-white transition-all duration-300 uppercase tracking-widest text-sm shadow-xl">
                                 {t('zed_btn_consult')}
                             </Link>
                         </div>
@@ -173,7 +173,7 @@ const ZEDCertification = () => {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-12">
                         <h2 className="text-3xl font-bold text-[#1a202c] uppercase tracking-wide">Understanding ZED Certification</h2>
-                        <div className="w-24 h-1 bg-[#a5d63f] mx-auto mt-4"></div>
+                        <div className="w-24 h-1 bg-[#F59E0B] mx-auto mt-4"></div>
                     </div>
 
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">

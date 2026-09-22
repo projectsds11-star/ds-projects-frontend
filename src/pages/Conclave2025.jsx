@@ -8,7 +8,7 @@ const Conclave2025 = () => {
     return (
         <div className="bg-[#f8fafc] min-h-screen font-sans">
             {/* Header / Hero Section */}
-            <div className="bg-[#0055A4] text-white py-12 md:py-16 border-b-4 border-[#a5d63f]">
+            <div className="bg-[#0055A4] text-white py-12 md:py-16 border-b-4 border-[#F59E0B]">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex flex-col md:flex-row gap-6 items-start md:items-center">
                         <div className="flex-1">
@@ -18,7 +18,7 @@ const Conclave2025 = () => {
                             <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
                                 {t('conclave_main_title')}
                             </h1>
-                            <p className="text-xl md:text-2xl text-blue-50 mb-6 italic border-l-4 border-[#a5d63f] pl-6 py-2">
+                            <p className="text-xl md:text-2xl text-blue-50 mb-6 italic border-l-4 border-[#F59E0B] pl-6 py-2">
                                 {t('conclave_quote')}
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 text-blue-100 mt-4 text-sm md:text-base font-medium">
@@ -45,7 +45,7 @@ const Conclave2025 = () => {
                             <p className="text-gray-800 leading-relaxed text-lg mb-6 text-justify">
                                 The Quality Council of India (QCI), in collaboration with the Department of Drinking Water and Sanitation (DDWS), Ministry of Jal Shakti and Ministry of Panchayati Raj organised the <strong>Sarpanch Samvaad National Quality Conclave</strong> today centered around the theme <strong>"Viksit Gram se Viksit Bharat"</strong>.
                             </p>
-                            <div className="bg-[#f0fdfa] p-6 border-l-4 border-[#a5d63f] italic text-gray-700">
+                            <div className="bg-[#f0fdfa] p-6 border-l-4 border-[#F59E0B] italic text-gray-700">
                                 "Sarpanch Samvaad has shown how digital platforms can unite and empower them to share solutions that matter at the grassroots: <strong>Shri C R Patil</strong>"
                             </div>
                         </div>
@@ -101,8 +101,8 @@ const Conclave2025 = () => {
                         </div>
 
                         {/* Jaxay Shah */}
-                        <div className="bg-white p-6 border border-gray-200 border-l-8 border-l-[#a5d63f] shadow-sm">
-                            <h3 className="font-bold text-[#a5d63f] mb-2 uppercase text-sm tracking-widest">Shri Jaxay Shah, Chairperson, QCI</h3>
+                        <div className="bg-white p-6 border border-gray-200 border-l-8 border-l-[#F59E0B] shadow-sm">
+                            <h3 className="font-bold text-[#F59E0B] mb-2 uppercase text-sm tracking-widest">Shri Jaxay Shah, Chairperson, QCI</h3>
                             <p className="text-gray-700 italic leading-relaxed">
                                 "Today, we have connected over 60,000 Sarpanchs through this initiative, but our journey does not stop here. I have set a goal for my team to connect an additional <strong>75,000 Sarpanchs by this October</strong>, and to reach <strong>1,00,000 Sarpanchs</strong> by the birthday of our beloved late former Prime Minister, Shri Atal Bihari Vajpayee."
                             </p>

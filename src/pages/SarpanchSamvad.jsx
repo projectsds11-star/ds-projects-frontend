@@ -9,10 +9,10 @@ const SarpanchSamvad = () => {
     return (
         <div className="bg-[#f8fafc] min-h-screen font-sans">
             {/* Page Header - ZED Theme */}
-            <div className="bg-[#0055A4] text-white py-16 md:py-24 border-b-4 border-[#a5d63f] relative overflow-hidden">
+            <div className="bg-[#0055A4] text-white py-16 md:py-24 border-b-4 border-[#F59E0B] relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:20px_20px]"></div>
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                    <div className="inline-block bg-white text-[#0055A4] px-4 py-1 font-black text-xs uppercase tracking-widest mb-6 border-l-4 border-[#a5d63f]">
+                    <div className="inline-block bg-white text-[#0055A4] px-4 py-1 font-black text-xs uppercase tracking-widest mb-6 border-l-4 border-[#F59E0B]">
                         {t('sarpanch_qci_badge')}
                     </div>
                     <h1 className="text-4xl md:text-5xl font-black mb-4">{t('sarpanch_title')}</h1>
@@ -76,14 +76,14 @@ const SarpanchSamvad = () => {
                 <div className="mb-24">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl font-black text-[#1a202c] uppercase tracking-wide">{t('sarpanch_features_title')}</h2>
-                        <div className="w-20 h-1 bg-[#a5d63f] mx-auto mt-4"></div>
+                        <div className="w-20 h-1 bg-[#F59E0B] mx-auto mt-4"></div>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                         {[
                             { title: "Networking", icon: <Users className="w-8 h-8 text-[#0055A4]" />, desc: "Connect with Sarpanchs from across India." },
-                            { title: "Showcase", icon: <Share2 className="w-8 h-8 text-[#a5d63f]" />, desc: "Share photos and videos of development works." },
+                            { title: "Showcase", icon: <Share2 className="w-8 h-8 text-[#F59E0B]" />, desc: "Share photos and videos of development works." },
                             { title: "Knowledge", icon: <Lightbulb className="w-8 h-8 text-[#0055A4]" />, desc: "Access information on major government schemes." },
-                            { title: "Dialogue", icon: <MessagesSquare className="w-8 h-8 text-[#a5d63f]" />, desc: "Forum for discussing village issues & solutions." }
+                            { title: "Dialogue", icon: <MessagesSquare className="w-8 h-8 text-[#F59E0B]" />, desc: "Forum for discussing village issues & solutions." }
                         ].map((feature, idx) => (
                             <div key={idx} className="bg-white p-8 border border-gray-100 border-t-8 border-t-[#0055A4] hover:shadow-2xl transition-all duration-300">
                                 <div className="mb-6">
@@ -98,7 +98,7 @@ const SarpanchSamvad = () => {
 
                 {/* Pride Of Andhra - Special Highlight */}
                 <div className="bg-[#003366] rounded-sm shadow-2xl overflow-hidden flex flex-col md:flex-row mb-24">
-                    <div className="bg-[#a5d63f] p-10 md:w-1/3 flex flex-col justify-center items-center text-center">
+                    <div className="bg-[#F59E0B] p-10 md:w-1/3 flex flex-col justify-center items-center text-center">
                         <Award size={100} className="mb-6 text-[#003366]" />
                         <h3 className="text-2xl font-black text-[#003366] uppercase tracking-tighter">{t('sarpanch_andhra_title')}</h3>
                     </div>

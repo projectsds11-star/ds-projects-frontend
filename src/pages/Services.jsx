@@ -21,7 +21,7 @@ const Services = () => {
         {
             id: "sarpanch-samvad",
             title: "Sarpanch Samvaad Platform",
-            icon: <Users className="h-10 w-10 text-[#a5d63f]" />,
+            icon: <Users className="h-10 w-10 text-[#F59E0B]" />,
             description: "A digital initiative by Quality Council of India (QCI) to connect 2.5 lakh Sarpanchs across India for quality village governance.",
             details: [
                 "Onboarding Sarpanchs to the platform",
@@ -49,11 +49,11 @@ const Services = () => {
     return (
         <div className="bg-[#f8fafc] min-h-screen">
             {/* Page Header */}
-            <div className="bg-[#0055A4] text-white py-16 md:py-20 border-b-4 border-[#a5d63f] relative overflow-hidden">
+            <div className="bg-[#0055A4] text-white py-16 md:py-20 border-b-4 border-[#F59E0B] relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:20px_20px]"></div>
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
                     <h1 className="text-4xl md:text-5xl font-black mb-4 tracking-tight uppercase">Our Schemes & Services</h1>
-                    <div className="h-1 w-20 bg-[#a5d63f] mx-auto mb-6"></div>
+                    <div className="h-1 w-20 bg-[#F59E0B] mx-auto mb-6"></div>
                     <p className="text-xl text-blue-50 max-w-2xl mx-auto leading-relaxed font-medium">
                         Professional facilitation and consultancy services for Government Schemes and Quality Standards in Andhra Pradesh.
                     </p>
@@ -79,12 +79,12 @@ const Services = () => {
                                     </div>
 
                                     <h4 className="font-black text-[#1a202c] mb-6 flex items-center gap-2 uppercase text-xs tracking-[0.2em]">
-                                        <FileText size={18} className="text-[#a5d63f]" /> Key Objectives
+                                        <FileText size={18} className="text-[#F59E0B]" /> Key Objectives
                                     </h4>
                                     <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4 mb-10">
                                         {service.details.map((detail, idx) => (
                                             <li key={idx} className="flex items-start gap-3 text-gray-700 font-medium">
-                                                <ChevronRight size={18} className="text-[#a5d63f] shrink-0 mt-0.5" />
+                                                <ChevronRight size={18} className="text-[#F59E0B] shrink-0 mt-0.5" />
                                                 {detail}
                                             </li>
                                         ))}
@@ -109,11 +109,11 @@ const Services = () => {
             {/* CTA Section */}
             <div className="bg-[#003366] py-16 text-white text-center">
                 <div className="max-w-4xl mx-auto px-4">
-                    <h2 className="text-3xl font-black uppercase tracking-widest mb-6 text-[#a5d63f]">Interested in our services?</h2>
+                    <h2 className="text-3xl font-black uppercase tracking-widest mb-6 text-[#F59E0B]">Interested in our services?</h2>
                     <p className="text-teal-50 text-lg mb-10 max-w-2xl mx-auto">
                         We provide end-to-end support for registration, documentation, and implementation of government projects.
                     </p>
-                    <Link to="/contact" className="inline-block bg-white text-[#003366] px-12 py-4 text-sm font-black uppercase tracking-widest hover:bg-[#a5d63f] hover:text-white transition-all shadow-2xl">
+                    <Link to="/contact" className="inline-block bg-white text-[#003366] px-12 py-4 text-sm font-black uppercase tracking-widest hover:bg-[#F59E0B] hover:text-white transition-all shadow-2xl">
                         Enquire Now
                     </Link>
                 </div>
@@ -124,7 +124,7 @@ const Services = () => {
                 <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-12">
                         <h2 className="text-3xl font-bold text-[#1a202c] uppercase tracking-wide">MSME Benefits & Schemes</h2>
-                        <div className="w-24 h-1 bg-[#a5d63f] mx-auto mt-4"></div>
+                        <div className="w-24 h-1 bg-[#F59E0B] mx-auto mt-4"></div>
                         <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
                             Explore the various government benefits and schemes available for MSMEs
                         </p>
