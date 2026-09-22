@@ -195,8 +195,8 @@ const Navbar = () => {
 
                     {/* Desktop Login Buttons */}
                     <div className="hidden md:flex items-center gap-3 py-2">
-                        <a href="https://www.dsprojectss.com/employee/login" target="_blank" rel="noopener noreferrer" className="bg-white text-[#0055A4] hover:bg-gray-100 font-bold px-4 py-2 rounded-sm text-xs uppercase tracking-wider transition-colors shadow-sm whitespace-nowrap">Candidate Login</a>
-                        <a href="https://www.dsprojectss.com/admin/login" target="_blank" rel="noopener noreferrer" className="bg-[#003366] text-white hover:bg-[#124246] font-bold px-4 py-2 rounded-sm text-xs uppercase tracking-wider transition-colors shadow-sm whitespace-nowrap">Admin Login</a>
+                        <a href="https://candidate.dsprojectss.com" target="_blank" rel="noopener noreferrer" className="bg-white text-[#0055A4] hover:bg-gray-100 font-bold px-4 py-2 rounded-sm text-xs uppercase tracking-wider transition-colors shadow-sm whitespace-nowrap">Candidate Login</a>
+                        <a href="https://admin.dsprojectss.com" target="_blank" rel="noopener noreferrer" className="bg-[#003366] text-white hover:bg-[#124246] font-bold px-4 py-2 rounded-sm text-xs uppercase tracking-wider transition-colors shadow-sm whitespace-nowrap">Admin Login</a>
                     </div>
 
                     {/* Mobile Menu Dropdown */}
@@ -254,8 +254,8 @@ const Navbar = () => {
                             ))}
                             {/* Mobile Login Buttons */}
                             <li className="flex flex-col gap-3 px-4 py-4 border-t border-white/20 mt-2">
-                                <a href="https://www.dsprojectss.com/employee/login" target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)} className="w-full text-center bg-white text-[#0055A4] font-bold px-4 py-3 rounded-sm text-sm uppercase tracking-wider">Candidate Login</a>
-                                <a href="https://www.dsprojectss.com/admin/login" target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)} className="w-full text-center bg-[#003366] text-white font-bold px-4 py-3 rounded-sm text-sm uppercase tracking-wider">Admin Login</a>
+                                <a href="https://candidate.dsprojectss.com" target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)} className="w-full text-center bg-white text-[#0055A4] font-bold px-4 py-3 rounded-sm text-sm uppercase tracking-wider">Candidate Login</a>
+                                <a href="https://admin.dsprojectss.com" target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)} className="w-full text-center bg-[#003366] text-white font-bold px-4 py-3 rounded-sm text-sm uppercase tracking-wider">Admin Login</a>
                             </li>
                         </ul>
                     </div>
