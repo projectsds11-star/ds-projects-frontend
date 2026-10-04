@@ -1,68 +1,153 @@
 import React from 'react';
 import DownloadCard from '../components/DownloadCard';
+import { motion } from 'framer-motion';
 
 const Gallery = () => {
     const images = [
-        { type: 'Campaign', title: "MSME Awareness Camp - Ongole", color: "bg-teal-50", img: "/images/msme-empowerment.jpg" },
-        { type: 'Poster', title: "ZED Certification Benefits", color: "bg-amber-50", img: "/images/zed-benefits.jpg" },
-        { type: 'Event', title: "National Quality Conclave 2025", color: "bg-blue-50", img: "/images/events/conclave/conclave-main.png" },
-        { type: 'Conference', title: "National Quality Conclave - Header", color: "bg-blue-50", img: "/images/events/conclave/conclave-header.png" },
-        { type: 'Group', title: "National Quality Conclave - Leadership", color: "bg-blue-50", img: "/images/events/conclave/conclave-group.png" },
-        { type: 'Event', title: "Sarpanch Samvaad Launch", color: "bg-teal-50", img: "/images/impact-poster.jpg" },
-        { type: 'Field Work', title: "Factory Visit - ZED Assessment", color: "bg-gray-50", img: "/images/zed-steps.jpg" },
-        { type: 'Meeting', title: "Meeting with QCI Officials", color: "bg-amber-50", img: "/images/roles-info.jpg" },
-        { type: 'Training', title: "ZED Facilitator Training Session", color: "bg-teal-50", img: "/images/pm-quote.jpg" },
+        { 
+            type: 'Vision & Mission', 
+            title: "Viksit Bharat 2047", 
+            img: "/images/pm-quote.jpg",
+            description: "Guided by visionary leadership, we are committed to building solutions for a brighter India. Together, we can realize the dream of a developed India by 2047 through inclusive growth, innovation, and unwavering dedication to national progress."
+        },
+        { 
+            type: 'Certification', 
+            title: "ZED Certification Levels", 
+            img: "/images/zed-levels-poster.jpg",
+            description: "MSMEs can attain ZED Certification across three progressive levels: Bronze, Silver, and Gold. Each level signifies an enhanced commitment to Zero Defect Zero Effect manufacturing, promoting environmental sustainability, product quality, and global competitiveness."
+        },
+        { 
+            type: 'Process', 
+            title: "Steps to ZED Incentives", 
+            img: "/images/zed-steps.jpg",
+            description: "Achieving ZED certification is a streamlined process designed for MSME growth. It involves a simple online registration, document upload, and comprehensive third-party assessment. Certified units can seamlessly download their certificates and avail exclusive incentives."
+        },
+        { 
+            type: 'Corporate Info', 
+            title: "Official Banner", 
+            img: "/images/shanmukha-banner.png",
+            description: "DS Projects acts as a cornerstone for State and Central Government contractual and project services. We leverage deep expertise and collaborative partnerships to execute high-impact initiatives, ensuring compliance, quality, and sustainable development."
+        },
+        { 
+            type: 'Partnerships', 
+            title: "Government Collaborations", 
+            img: "/images/org-banner.jpg",
+            description: "Proudly collaborating with the Ministry of MSME, Quality Council of India (QCI), and the Govt of AP. Our joint initiatives are designed to foster skill development, IT solutions, and comprehensive MSME support networks for a self-reliant economy."
+        },
+        { 
+            type: 'Roles', 
+            title: "Project Facilitation", 
+            img: "/images/roles-info.jpg",
+            description: "As authorized partners, DS Projects facilitates the MSME ZED Scheme and the Sarpanch Samvaad app rollout. We are dedicated to providing handholding support, awareness campaigns, and extensive grassroots coordination to ensure successful scheme implementation."
+        },
+        { 
+            type: 'Careers', 
+            title: "Join Our Team", 
+            img: "/images/recruitment-poster.jpg",
+            description: "We are actively hiring passionate individuals for diverse roles including District Co-ordinators, ZED Facilitators, and Data Executives. Build a rewarding career with DS Projects, driving meaningful impact through quality development and community engagement."
+        },
+        { 
+            type: 'Impact & Vision', 
+            title: "Our Impact", 
+            img: "/images/impact-poster.jpg",
+            description: "Empowering businesses and strengthening communities across Andhra Pradesh. With over 1000+ MSMEs supported, 5000+ jobs facilitated, and 200+ entrepreneurs mentored, we are driving digital solutions and skill development for a thriving, self-reliant India."
+        },
+        { 
+            type: 'Awareness', 
+            title: "Regional Outreach", 
+            img: "/images/zed-telugu.jpg",
+            description: "Empowering regional MSMEs with localized ZED Certification awareness. Our goal is to elevate quality standards and promote eco-friendly manufacturing practices at the grassroots level, ensuring every enterprise understands the immense value of Zero Defect Zero Effect."
+        }
     ];
 
     return (
         <div className="bg-[#f8fafc] min-h-screen font-sans">
             {/* Page Header */}
-            <div className="bg-[#0055A4] text-white py-16 md:py-20 border-b-4 border-[#F59E0B] relative overflow-hidden text-center">
+            <div className="bg-[#003366] text-white py-20 border-b-4 border-[#F59E0B] relative overflow-hidden text-center">
                 <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:20px_20px]"></div>
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                    <h1 className="text-4xl md:text-5xl font-black mb-4 tracking-tight uppercase">Gallery & Media</h1>
-                    <div className="h-1 w-20 bg-[#F59E0B] mx-auto mb-6"></div>
-                    <p className="text-xl text-blue-50 max-w-2xl mx-auto leading-relaxed font-medium">
-                        Glimpses of our initiatives, awareness camps, and on-ground activities across Andhra Pradesh.
-                    </p>
+                    <motion.h1 
+                        initial={{ opacity: 0, y: -20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        className="text-4xl md:text-5xl font-black mb-4 tracking-tight uppercase"
+                    >
+                        Project Gallery
+                    </motion.h1>
+                    <div className="h-1 w-24 bg-[#F59E0B] mx-auto mb-6"></div>
+                    <motion.p 
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.1 }}
+                        className="text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed font-medium"
+                    >
+                        Explore our initiatives, government collaborations, and ongoing efforts to empower MSMEs and build a brighter India.
+                    </motion.p>
                 </div>
             </div>
 
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
-                    {images.map((img, idx) => (
-                        <div key={idx} className="group cursor-pointer bg-white p-3 rounded-sm shadow-xl border border-gray-100 hover:border-[#0055A4] transition-all duration-300">
-                            <div className={`h-72 w-full rounded-sm ${img.color} flex items-center justify-center relative overflow-hidden border border-gray-50`}>
-                                <img src={img.img} alt={img.title} className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-700" />
-                                <div className="absolute top-4 right-4 bg-[#003366]/90 text-white text-[10px] px-3 py-1 uppercase font-black tracking-widest rounded-sm border border-white/20">
-                                    {img.type}
+            {/* Gallery Grid - Masonry (Puzzle) Layout */}
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+                <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
+                    {images.map((item, idx) => (
+                        <motion.div 
+                            key={idx}
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: (idx % 3) * 0.1 }}
+                            className="group relative rounded-xl shadow-lg overflow-hidden border border-gray-200 hover:shadow-2xl transition-all duration-500 break-inside-avoid block bg-white"
+                        >
+                            {/* Full Image without padding */}
+                            <img 
+                                src={item.img} 
+                                alt={item.title} 
+                                className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700 block" 
+                            />
+
+                            {/* Top Badge (Always visible, fades out on hover) */}
+                            <div className="absolute top-4 right-4 z-20 group-hover:opacity-0 transition-opacity duration-300">
+                                <span className="bg-[#0055A4] text-white text-xs font-bold px-3 py-1.5 uppercase tracking-widest rounded shadow-md">
+                                    {item.type}
+                                </span>
+                            </div>
+
+                            {/* Hover Overlay Content */}
+                            <div className="absolute inset-0 bg-gradient-to-t from-[#003366]/95 via-[#0055A4]/90 to-[#0055A4]/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8 z-10 translate-y-4 group-hover:translate-y-0">
+                                <div className="transform transition-transform duration-500">
+                                    <span className="text-[#F59E0B] text-sm font-bold tracking-widest uppercase mb-2 block">
+                                        {item.type}
+                                    </span>
+                                    <h3 className="text-xl md:text-2xl font-black text-white mb-4 leading-tight">
+                                        {item.title}
+                                    </h3>
+                                    <p className="text-blue-50 text-sm md:text-base leading-relaxed line-clamp-5">
+                                        {item.description}
+                                    </p>
                                 </div>
                             </div>
-                            <div className="p-4">
-                                <h3 className="text-sm font-black text-[#003366] group-hover:text-[#0055A4] transition-colors uppercase tracking-widest text-center leading-tight">
-                                    {img.title}
-                                </h3>
-                                <div className="w-8 h-0.5 bg-[#F59E0B] mx-auto mt-3 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                            </div>
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
 
-                <div className="mt-24 bg-[#003366] text-white rounded-sm p-12 md:p-16 text-center relative overflow-hidden shadow-2xl">
-                    <div className="absolute top-0 left-0 w-full h-1 bg-[#F59E0B]"></div>
-                    <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tight mb-6">Promoting National Quality</h2>
-                    <p className="text-teal-50 max-w-3xl mx-auto mb-10 text-lg leading-relaxed font-medium">
-                        We actively conduct awareness camps across Andhra Pradesh to educate MSMEs about the benefits of ZED Certification and other central government schemes. Our team is dedicated to building a quality-conscious ecosystem.
-                    </p>
-                    <div className="flex flex-wrap justify-center gap-6">
-                        <button className="px-10 py-4 bg-[#F59E0B] text-[#003366] font-black rounded-sm hover:scale-105 transition-all uppercase tracking-widest text-sm shadow-xl">
-                            Follow on social media
+                {/* Promotional Section */}
+                <motion.div 
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    className="mt-24 bg-gradient-to-br from-[#003366] to-[#0055A4] text-white rounded-2xl p-12 text-center relative overflow-hidden shadow-2xl border-t-4 border-[#F59E0B]"
+                >
+                    <div className="relative z-10">
+                        <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tight mb-6">Driving National Quality</h2>
+                        <p className="text-blue-100 max-w-3xl mx-auto mb-10 text-lg leading-relaxed font-medium">
+                            We are actively bridging the gap between enterprises and government schemes across Andhra Pradesh. From ZED Certification to local community empowerment, DS Projects is committed to a self-reliant economy.
+                        </p>
+                        <button className="px-10 py-4 bg-[#F59E0B] text-[#003366] font-black rounded-lg hover:bg-white transition-all uppercase tracking-widest text-sm shadow-xl">
+                            Connect With Us Today
                         </button>
                     </div>
-                </div>
+                </motion.div>
             </div>
 
-            {/* Download Card Section */}
             <DownloadCard />
         </div>
     );

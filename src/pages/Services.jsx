@@ -118,27 +118,6 @@ const Services = () => {
                     </Link>
                 </div>
             </div>
-
-            {/* MSME Benefits Visual */}
-            <div className="bg-white py-16">
-                <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-12">
-                        <h2 className="text-3xl font-bold text-[#1a202c] uppercase tracking-wide">MSME Benefits & Schemes</h2>
-                        <div className="w-24 h-1 bg-[#F59E0B] mx-auto mt-4"></div>
-                        <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
-                            Explore the various government benefits and schemes available for MSMEs
-                        </p>
-                    </div>
-                    <div className="bg-white rounded-lg shadow-2xl overflow-hidden border-4 border-[#0055A4]">
-                        <img
-                            src="/images/msme-benefits.jpg"
-                            alt="MSME Benefits & Schemes - Government of India"
-                            className="w-full h-auto object-cover"
-                        />
-                    </div>
-                </div>
-            </div>
-
             {/* Download Card Section */}
             <DownloadCard />
         </div>

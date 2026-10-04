@@ -148,16 +148,21 @@ const Home = () => {
                             </h2>
                             <div className="h-1 w-20 bg-[#0055A4] mb-6"></div>
 
-                            <p className="text-[#4a5568] text-base mb-6 leading-relaxed text-justify">
+                            <p className="text-[#4a5568] text-base mb-4 leading-relaxed text-justify">
                                 DS Projects is dedicated to uplifting the MSME sector in Andhra Pradesh.
-                                As authorized partners, we assist businesses in achieving ZED Certification, ensuring they meet global quality standards.
+                                As authorized partners, we assist businesses in achieving ZED Certification, ensuring they meet global quality standards. We bridge the gap between local administration and modern technological practices, providing end-to-end guidance for long-term sustainable growth.
+                            </p>
+                            <p className="text-[#4a5568] text-base mb-6 leading-relaxed text-justify">
+                                Our experienced team works tirelessly at the grassroots level to demystify complex government frameworks, making essential schemes accessible to every eligible enterprise. By combining strategic consultancy with hands-on implementation, we empower local entrepreneurs to scale their operations, enhance productivity, and contribute significantly to the regional economy.
                             </p>
                             <ul className="space-y-3 mb-8 bg-gray-50 p-6 rounded-sm border border-gray-200">
                                 {[
                                     "Official MSME Ministry ZED Scheme Support",
                                     "Field-level Coordination across Andhra Pradesh",
                                     "Sarpanch Samvad App Implementation Partner",
-                                    "Government Project Execution Specialists"
+                                    "Government Project Execution Specialists",
+                                    "Comprehensive Digital Transformation Services",
+                                    "Access to Financial Subsidies & Grants"
                                 ].map((item, index) => (
                                     <li key={index} className="flex items-start gap-3 border-b border-gray-200 pb-2 last:border-0 last:pb-0">
                                         <CheckCircle className="text-[#138808] h-5 w-5 shrink-0 mt-0.5" />

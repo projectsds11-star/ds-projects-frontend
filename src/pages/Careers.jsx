@@ -81,9 +81,7 @@ const Careers = () => {
                     <div className="space-y-8">
                         <div className="mb-10">
                             <h2 className="text-3xl font-black text-[#1a202c] mb-6 border-l-4 border-[#0055A4] pl-4 uppercase tracking-tight">Open Opportunities</h2>
-                            <div className="rounded-sm overflow-hidden shadow-xl border-4 border-white mb-8">
-                                <img src="/images/roles-info.jpg" alt="Job Roles Info" className="w-full h-auto" />
-                            </div>
+
                         </div>
 
                         {jobs.map((job, idx) => (
@@ -144,9 +142,7 @@ const Careers = () => {
 
                     {/* Registration Form Column */}
                     <div id="application-form" className="lg:sticky lg:top-24 space-y-10">
-                        <div className="rounded-sm overflow-hidden shadow-2xl border-4 border-white">
-                            <img src="/images/recruitment-poster.jpg" alt="Recruitment Poster" className="w-full h-auto" />
-                        </div>
+
 
                         <div className="bg-white p-10 rounded-sm shadow-2xl border border-gray-100 border-t-8 border-t-[#0055A4]">
                             <div className="mb-10">

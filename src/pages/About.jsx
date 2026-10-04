@@ -64,9 +64,7 @@ const About = () => {
                             </div>
                         </div>
 
-                        <div className="rounded-sm overflow-hidden shadow-2xl border-4 border-white rotate-1 hover:rotate-0 transition-transform">
-                            <img src="/images/pm-quote.jpg" alt="PM Narendra Modi Quote" className="w-full h-auto" />
-                        </div>
+
                     </div>
                 </div>
 
