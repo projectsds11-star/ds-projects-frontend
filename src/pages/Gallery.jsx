@@ -5,58 +5,58 @@ import { motion } from 'framer-motion';
 const Gallery = () => {
     const images = [
         { 
-            type: 'Vision & Mission', 
-            title: "Viksit Bharat 2047", 
-            img: "/images/gallery/pm-quote.jpg",
-            description: "Guided by visionary leadership, we are committed to building solutions for a brighter India. Together, we can realize the dream of a developed India by 2047 through inclusive growth, innovation, and unwavering dedication to national progress."
-        },
-        { 
-            type: 'Certification', 
-            title: "ZED Certification Levels", 
-            img: "/images/gallery/zed-levels-poster.jpg",
-            description: "MSMEs can attain ZED Certification across three progressive levels: Bronze, Silver, and Gold. Each level signifies an enhanced commitment to Zero Defect Zero Effect manufacturing, promoting environmental sustainability, product quality, and global competitiveness."
-        },
-        { 
-            type: 'Process', 
-            title: "Steps to ZED Incentives", 
-            img: "/images/gallery/zed-steps.jpg",
-            description: "Achieving ZED certification is a streamlined process designed for MSME growth. It involves a simple online registration, document upload, and comprehensive third-party assessment. Certified units can seamlessly download their certificates and avail exclusive incentives."
-        },
-        { 
             type: 'Corporate Info', 
-            title: "Official Banner", 
-            img: "/images/gallery/ds-banner.png",
-            description: "DS Projects acts as a cornerstone for State and Central Government contractual and project services. We leverage deep expertise and collaborative partnerships to execute high-impact initiatives, ensuring compliance, quality, and sustainable development."
-        },
-        { 
-            type: 'Partnerships', 
-            title: "Government Collaborations", 
-            img: "/images/gallery/org-banner.jpg",
-            description: "Proudly collaborating with the Ministry of MSME, Quality Council of India (QCI), and the Govt of AP. Our joint initiatives are designed to foster skill development, IT solutions, and comprehensive MSME support networks for a self-reliant economy."
-        },
-        { 
-            type: 'Roles', 
-            title: "Project Facilitation", 
-            img: "/images/gallery/roles-info.jpg",
-            description: "As authorized partners, DS Projects facilitates the MSME ZED Scheme and the Sarpanch Samvaad app rollout. We are dedicated to providing handholding support, awareness campaigns, and extensive grassroots coordination to ensure successful scheme implementation."
+            title: "Government Contract Services", 
+            img: "/images/gallery/gallery-1-contract-banner.png",
+            description: "DS Projects State & Central Government Contract & Project Services. Authorized partner for Central Govt Contractual Works with UDYAM-AP-13-0077732, serving Ongole and Andhra Pradesh."
         },
         { 
             type: 'Careers', 
-            title: "Join Our Team", 
-            img: "/images/gallery/recruitment-poster.jpg",
-            description: "We are actively hiring passionate individuals for diverse roles including District Co-ordinators, ZED Facilitators, and Data Executives. Build a rewarding career with DS Projects, driving meaningful impact through quality development and community engagement."
+            title: "We Are Hiring!", 
+            img: "/images/gallery/gallery-2-hiring.png",
+            description: "DS Projects is actively hiring District Co-ordinators, Mandal Co-ordinators, ZED Facilitators, Field Data Executives, and Office Staff. Build a rewarding career contributing to grassroots MSME development."
+        },
+        { 
+            type: 'Roles', 
+            title: "ZED Facilitation", 
+            img: "/images/gallery/gallery-3-zed-facilitation.png",
+            description: "As authorized ZED facilitators, DS Projects provides comprehensive support to MSMEs — awareness campaigns, handholding, documentation assistance, and end-to-end coordination for Zero Defect Zero Effect certification."
+        },
+        { 
+            type: 'Vision & Mission', 
+            title: "A Brighter India", 
+            img: "/images/gallery/gallery-4-brighter-india.png",
+            description: "DS Projects is committed to building a brighter, self-reliant India. Guided by visionary leadership, we drive inclusive growth through MSME empowerment, digital solutions, and government collaboration."
         },
         { 
             type: 'Impact & Vision', 
-            title: "Our Impact", 
-            img: "/images/gallery/impact-poster.jpg",
-            description: "Empowering businesses and strengthening communities across Andhra Pradesh. With over 1000+ MSMEs supported, 5000+ jobs facilitated, and 200+ entrepreneurs mentored, we are driving digital solutions and skill development for a thriving, self-reliant India."
+            title: "Building a Brighter India", 
+            img: "/images/gallery/gallery-5-building-india.png",
+            description: "With 1000+ MSMEs supported, 5000+ jobs facilitated, 200+ entrepreneurs mentored, and 50+ Government Collaborations, DS Projects is a catalyst for economic transformation across Andhra Pradesh."
+        },
+        { 
+            type: 'Impact & Vision', 
+            title: "Viksit Bharat 2047", 
+            img: "/images/gallery/gallery-6-building-india2.png",
+            description: "Inspired by PM Narendra Modi's vision of a Viksit Bharat by 2047, DS Projects works alongside CM Chandrababu Naidu, Dy CM Pawan Kalyan, and Minister Lokesh to build a prosperous Andhra Pradesh."
+        },
+        { 
+            type: 'Certification', 
+            title: "MSME Sustainable ZED Certification", 
+            img: "/images/gallery/gallery-7-zed-poster.png",
+            description: "MSMEs can attain ZED Certification across three progressive levels: Bronze, Silver, and Gold. DS Projects (UDYAM-AP-13-0077732) is your trusted partner for achieving Zero Defect Zero Effect certification."
+        },
+        { 
+            type: 'Process', 
+            title: "ZED Certification Steps", 
+            img: "/images/gallery/gallery-8-zed-steps.png",
+            description: "A step-by-step guide to MSME ZED Certification. From online registration and document upload to third-party assessment and incentive availing — DS Projects guides you through every stage of the process."
         },
         { 
             type: 'Awareness', 
-            title: "Regional Outreach", 
-            img: "/images/gallery/zed-telugu.jpg",
-            description: "Empowering regional MSMEs with localized ZED Certification awareness. Our goal is to elevate quality standards and promote eco-friendly manufacturing practices at the grassroots level, ensuring every enterprise understands the immense value of Zero Defect Zero Effect."
+            title: "Zero Defect, Zero Effect", 
+            img: "/images/gallery/gallery-9-zed-zero-defect.png",
+            description: "Zero Defect Zero Effect — the foundation of ZED Certification. DS Projects promotes quality manufacturing and environmental sustainability across Andhra Pradesh's MSME ecosystem."
         }
     ];
 
