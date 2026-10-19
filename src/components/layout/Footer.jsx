@@ -90,7 +90,7 @@ const Footer = () => {
                         </p>
                         <div className="p-2 bg-black/30 border border-white/20 rounded backdrop-blur-sm inline-block shadow-inner">
                             <span className="text-[11px] text-gray-300 block uppercase tracking-wider mb-0.5">Authorized Partner</span>
-                            <span className="font-mono text-[#F59E0B] font-bold text-sm tracking-widest">UDYAM-AP-13-0078844</span>
+                            <span className="font-mono text-[#F59E0B] font-bold text-sm tracking-widest">UDYAM-AP-13-0077732</span>
                         </div>
                     </div>
 
@@ -138,15 +138,15 @@ const Footer = () => {
                                 </div>
                                 <div className="text-sm text-gray-100 leading-snug font-medium">
                                     <strong className="block mb-0.5 text-white">Corporate Office:</strong>
-                                    Sai Complex, 3rd Floor, Daravari Thota,<br/>
-                                    Opp: Bank Of Baroda, Ongole, PIN: 523001
+                                    Guntur Mini Bypass Road,<br/>
+                                    Opposite Royal Oak, Ongole
                                 </div>
                             </div>
                             <div className="flex items-center gap-3 group">
                                 <div className="p-1.5 bg-white/10 group-hover:bg-[#F59E0B] group-hover:text-[#003366] transition-colors rounded shadow-sm">
                                     <Phone size={14} />
                                 </div>
-                                <span className="text-sm font-bold text-gray-100">+91 9701529797</span>
+                                <span className="text-sm font-bold text-gray-100">+91 9701529191</span>
                             </div>
                             <div className="flex items-center gap-3 group">
                                 <div className="p-1.5 bg-white/10 group-hover:bg-[#F59E0B] group-hover:text-[#003366] transition-colors rounded shadow-sm">
