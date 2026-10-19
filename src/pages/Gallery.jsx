@@ -25,7 +25,7 @@ const Gallery = () => {
         { 
             type: 'Corporate Info', 
             title: "Official Banner", 
-            img: "/images/gallery/shanmukha-banner.png",
+            img: "/images/gallery/ds-banner.png",
             description: "DS Projects acts as a cornerstone for State and Central Government contractual and project services. We leverage deep expertise and collaborative partnerships to execute high-impact initiatives, ensuring compliance, quality, and sustainable development."
         },
         { 
