@@ -68,6 +68,7 @@ const Footer = () => {
         { name: t('zed'), path: '/zed-certification' },
         { name: t('sarpanch'), path: '/sarpanch-samvad' },
         { name: t('conclave'), path: '/conclave-2025' },
+        { name: t('treds'), path: '/treds-msme-invoice-financing' },
     ];
 
     return (

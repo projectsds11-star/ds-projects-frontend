@@ -11,6 +11,7 @@ import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
 import SarpanchSamvad from './pages/SarpanchSamvad';
 import Conclave2025 from './pages/Conclave2025';
+import TReDSFinancing from './pages/TReDSFinancing';
 
 // Scroll to top on route change
 function ScrollToTop() {
@@ -39,6 +40,7 @@ function App() {
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/conclave-2025" element={<Conclave2025 />} />
+            <Route path="/treds-msme-invoice-financing" element={<TReDSFinancing />} />
           </Routes>
         </Layout>
       </LanguageProvider>

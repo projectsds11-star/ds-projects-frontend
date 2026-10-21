@@ -35,7 +35,8 @@ const Navbar = () => {
             dropdown: [
                 { name: t('zed'), path: '/zed-certification' },
                 { name: t('sarpanch'), path: '/sarpanch-samvad' },
-                { name: t('conclave'), path: '/conclave-2025' }
+                { name: t('conclave'), path: '/conclave-2025' },
+                { name: t('treds'), path: '/treds-msme-invoice-financing' }
             ]
         },
         { name: t('careers'), path: '/careers' },
@@ -167,7 +168,7 @@ const Navbar = () => {
                                         >
                                             <ChevronDown size={14} />
                                         </button>
-                                        <ul className="absolute left-0 top-full w-56 bg-white text-gray-800 shadow-xl border-t-4 border-[#F59E0B] hidden group-hover:block animate-fade-in z-50">
+                                        <ul className="absolute left-0 top-full w-72 bg-white text-gray-800 shadow-xl border-t-4 border-[#F59E0B] hidden group-hover:block animate-fade-in z-50">
                                             {link.dropdown.map((dropLink) => (
                                                 <li key={dropLink.path} className="border-b border-gray-100 last:border-0 hover:bg-gray-50">
                                                     <Link to={dropLink.path} className="block px-4 py-3 text-sm font-bold text-gray-700 hover:text-[#0055A4]">
@@ -222,7 +223,7 @@ const Navbar = () => {
                                                     <ChevronDown size={16} className={`transform transition-transform ${dropdownOpen === link.name ? 'rotate-180' : ''}`} />
                                                 </button>
                                             </div>
-                                            <div className={`bg-[#004080] overflow-hidden transition-all duration-300 ${dropdownOpen === link.name ? 'max-h-40' : 'max-h-0'}`}>
+                                            <div className={`bg-[#004080] overflow-hidden transition-all duration-300 ${dropdownOpen === link.name ? 'max-h-64' : 'max-h-0'}`}>
                                                 <ul>
                                                     {link.dropdown.map((dropLink) => (
                                                         <li key={dropLink.path}>
