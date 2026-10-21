@@ -25,7 +25,8 @@ import {
   Briefcase,
   AlertTriangle,
   RotateCcw,
-  Check
+  Check,
+  Lock
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
