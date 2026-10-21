@@ -5,7 +5,6 @@ import {
   TrendingUp,
   FileText,
   CheckCircle2,
-  AlertCircle,
   Phone,
   Mail,
   MapPin,
@@ -20,7 +19,6 @@ import {
   FileCheck2,
   Landmark,
   Briefcase,
-  AlertTriangle,
   Check,
   Lock
 } from 'lucide-react';
@@ -102,52 +100,6 @@ export default function TReDSFinancing() {
   const calcDiscountCost = Math.round((cleanInvoiceAmount * cleanAnnualRate * cleanCreditDays) / 36500);
   const calcNetProceeds = Math.max(0, cleanInvoiceAmount - calcDiscountCost);
   const costPerLakh = cleanInvoiceAmount > 0 ? Math.round((calcDiscountCost / cleanInvoiceAmount) * 100000) : 0;
-
-  // ── ELIGIBILITY CHECKLIST STATE ─────────────────────────────────────────────
-  const [checklist, setChecklist] = useState({
-    hasUdyam: true,
-    goodsDelivered: true,
-    invoiceRaised: true,
-    buyerAccepted: false,
-    buyerEligible: true,
-    hasKycDocs: true
-  });
-
-  const toggleCheck = (key) => {
-    setChecklist(prev => ({ ...prev, [key]: !prev[key] }));
-  };
-
-  const checkedCount = Object.values(checklist).filter(Boolean).length;
-
-  const getEligibilityStatus = () => {
-    if (checkedCount === 6) {
-      return {
-        label: 'You may be ready to explore the process.',
-        color: 'bg-emerald-50 text-emerald-800 border-emerald-300',
-        badge: 'Ready for Platform Evaluation',
-        icon: CheckCircle2,
-        details: 'Your enterprise has the foundational parameters in place. Next, explore onboarding requirements on operational TReDS exchanges.'
-      };
-    }
-    if (checkedCount >= 4) {
-      return {
-        label: 'Some information or buyer confirmation may still be needed.',
-        color: 'bg-amber-50 text-amber-800 border-amber-300',
-        badge: 'Action Items Pending',
-        icon: AlertTriangle,
-        details: 'Review the unchecked items above—particularly formal buyer acceptance or Udyam documentation—before proceeding.'
-      };
-    }
-    return {
-      label: 'Please verify your buyer and platform eligibility first.',
-      color: 'bg-slate-50 text-slate-800 border-slate-300',
-      badge: 'Preliminary Stage',
-      icon: AlertCircle,
-      details: 'Ensure your enterprise is registered under MSME/Udyam and your buyers are entities eligible for institutional factoring.'
-    };
-  };
-
-  const eligibilityResult = getEligibilityStatus();
 
   // ── FAQ ACCORDION STATE ─────────────────────────────────────────────────────
   const [openFaq, setOpenFaq] = useState(null);
@@ -730,57 +682,6 @@ export default function TReDSFinancing() {
         </div>
       </section>
 
-      {/* SECTION I: ELIGIBILITY SELF-CHECK */}
-      <section className="py-16 md:py-20 bg-white border-b border-slate-200/80">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-14">
-            <span className="text-xs font-black text-[#0055A4] uppercase tracking-widest bg-blue-100/60 px-3 py-1 rounded-sm border-l-4 border-[#0055A4]">Pre-Screening Tool</span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-slate-900 mt-3 tracking-tight">Interactive Eligibility Self-Check</h2>
-            <div className="w-16 h-1 bg-[#F59E0B] mx-auto mt-3 mb-4 rounded-full" />
-            <p className="text-base text-slate-600">Check the preliminary criteria below to determine whether your trade transaction aligns with the TReDS institutional framework.</p>
-          </div>
-
-          <div className="max-w-3xl mx-auto bg-slate-50 rounded-2xl border border-slate-200 p-6 sm:p-8 space-y-6 shadow-sm">
-            <div className="space-y-3.5">
-              {[
-                { key: 'hasUdyam', label: 'Does your business have a valid MSME / Udyam registration?' },
-                { key: 'goodsDelivered', label: 'Have you supplied goods or services to your buyer?' },
-                { key: 'invoiceRaised', label: 'Have you raised a valid tax invoice for that supply?' },
-                { key: 'buyerAccepted', label: 'Has the buyer accepted or confirmed the invoice through the applicable process?' },
-                { key: 'buyerEligible', label: 'Is the buyer a Corporate, PSU, or Government entity eligible to participate in TReDS?' },
-                { key: 'hasKycDocs', label: 'Can your enterprise provide standard business KYC and bank account records?' }
-              ].map((item) => (
-                <label
-                  key={item.key}
-                  className="p-4 rounded-xl bg-white border border-slate-200/80 flex items-center justify-between gap-4 cursor-pointer hover:border-slate-300 transition-colors"
-                >
-                  <span className="text-xs sm:text-sm font-semibold text-slate-800">{item.label}</span>
-                  <input
-                    type="checkbox"
-                    checked={checklist[item.key]}
-                    onChange={() => toggleCheck(item.key)}
-                    className="w-5 h-5 rounded text-[#0055A4] focus:ring-[#0055A4] cursor-pointer shrink-0"
-                  />
-                </label>
-              ))}
-            </div>
-
-            <div className={`p-5 rounded-2xl border-2 transition-all ${eligibilityResult.color}`}>
-              <div className="flex items-center gap-2 mb-2">
-                <eligibilityResult.icon size={20} />
-                <span className="text-xs font-black uppercase tracking-wider">{eligibilityResult.badge} ({checkedCount}/6)</span>
-              </div>
-              <h4 className="text-base sm:text-lg font-black">{eligibilityResult.label}</h4>
-              <p className="text-xs sm:text-sm mt-1 leading-relaxed opacity-90">{eligibilityResult.details}</p>
-            </div>
-
-            <p className="text-[11px] text-slate-500 leading-snug">
-              ⚠️ <strong>Disclaimer: </strong>
-              This interactive checklist is for preliminary guidance only. It is not an eligibility decision, formal credit assessment, or financing approval. Actual onboarding and financing decisions rest with authorized platform operators and participating financiers.
-            </p>
-          </div>
-        </div>
-      </section>
 
       {/* CONTACT */}
       <section id="contact-options" className="py-16 md:py-20 bg-slate-50 border-b border-slate-200/80">
@@ -823,31 +724,30 @@ export default function TReDSFinancing() {
       </section>
 
       {/* SECTION L: FAQ */}
-      <section className="py-16 md:py-24 bg-white border-b border-slate-200/80">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
+      <section className="py-10 md:py-14 bg-white border-b border-slate-200/80">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-6">
             <span className="text-xs font-black text-[#0055A4] uppercase tracking-widest bg-blue-100/60 px-3 py-1 rounded-sm border-l-4 border-[#0055A4]">Common Queries</span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-slate-900 mt-3 tracking-tight">Frequently Asked Questions</h2>
-            <div className="w-16 h-1 bg-[#F59E0B] mx-auto mt-3 mb-4 rounded-full" />
-            <p className="text-base text-slate-600 font-medium">Detailed answers regarding TReDS regulations, operational steps, costs, and role disclosures.</p>
+            <h2 className="text-xl sm:text-2xl font-black text-slate-900 mt-2 tracking-tight">Frequently Asked Questions</h2>
+            <div className="w-12 h-0.5 bg-[#F59E0B] mx-auto mt-2 mb-1 rounded-full" />
           </div>
 
-          <div className="space-y-3">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-1.5">
             {faqList.map((faq, idx) => {
               const isOpen = openFaq === idx;
               return (
-                <div key={idx} className="rounded-2xl border border-slate-200/80 overflow-hidden bg-white transition-all">
+                <div key={idx} className="border border-slate-200 rounded-lg overflow-hidden bg-white">
                   <button
                     type="button"
                     onClick={() => toggleFaq(idx)}
-                    className="w-full p-5 text-left flex items-center justify-between gap-4 font-bold text-slate-900 hover:bg-slate-50/80 transition-colors cursor-pointer text-sm sm:text-base"
+                    className="w-full px-3.5 py-2.5 text-left flex items-center justify-between gap-3 font-semibold text-slate-800 hover:bg-slate-50 transition-colors cursor-pointer text-xs"
                     aria-expanded={isOpen}
                   >
                     <span>{faq.q}</span>
-                    <ChevronDown size={18} className={`text-[#0055A4] shrink-0 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`} />
+                    <ChevronDown size={14} className={`text-[#0055A4] shrink-0 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`} />
                   </button>
                   {isOpen && (
-                    <div className="px-5 pb-5 pt-1 text-xs sm:text-sm text-slate-600 leading-relaxed font-medium border-t border-slate-100 bg-slate-50/50">
+                    <div className="px-3.5 pb-3 pt-1 text-[11px] text-slate-600 leading-relaxed border-t border-slate-100 bg-slate-50/60">
                       {faq.a}
                     </div>
                   )}
@@ -856,19 +756,19 @@ export default function TReDSFinancing() {
             })}
           </div>
 
-          <div className="mt-8 p-4 bg-blue-50 border border-blue-200 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-4">
-            <div className="text-left text-xs text-blue-950 font-medium">
+          <div className="mt-5 p-3 bg-blue-50 border border-blue-200 rounded-xl flex flex-col sm:flex-row items-center justify-between gap-3">
+            <p className="text-xs text-blue-950 font-medium">
               <strong>Official Regulatory Guidance: </strong>
-              For formal statutory definitions, read the Reserve Bank of India (RBI) Master Directions and FAQ on TReDS.
-            </div>
+              Read the RBI Master Directions and FAQ on TReDS for formal statutory definitions.
+            </p>
             <a
               href="https://www.rbi.org.in/scripts/FAQView.aspx?Id=132"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-xs font-bold text-[#003366] hover:text-[#0055A4] bg-white px-3.5 py-2 rounded-lg border border-blue-200 shrink-0 shadow-sm cursor-pointer"
+              className="inline-flex items-center gap-1.5 text-xs font-bold text-[#003366] hover:text-[#0055A4] bg-white px-3 py-1.5 rounded-lg border border-blue-200 shrink-0 shadow-sm cursor-pointer whitespace-nowrap"
             >
               <span>Visit RBI TReDS FAQ</span>
-              <ExternalLink size={13} />
+              <ExternalLink size={12} />
             </a>
           </div>
         </div>
