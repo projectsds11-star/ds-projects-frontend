@@ -1,4 +1,4 @@
-import React, { useState, useId, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { 
   Building2, 
   ShieldCheck, 
@@ -18,9 +18,6 @@ import {
   Clock, 
   ExternalLink, 
   Scale, 
-  Lock, 
-  Send, 
-  Check, 
   X,
   FileCheck2,
   DollarSign,
@@ -162,122 +159,7 @@ export default function TReDSFinancing() {
 
   const eligibilityResult = getEligibilityStatus();
 
-  // ─────────────────────────────────────────────────────────────────────────────
-  // ENQUIRY FORM STATE (Section J)
-  // ─────────────────────────────────────────────────────────────────────────────
-  const [formData, setFormData] = useState({
-    fullName: '',
-    businessName: '',
-    mobileNumber: '',
-    emailAddress: '',
-    state: 'Andhra Pradesh',
-    businessCategory: 'Micro',
-    enquiryType: 'Understanding TReDS Process',
-    udyamStatus: 'Registered',
-    invoiceValueRange: '₹5–10 lakh',
-    buyerType: 'Private Corporate',
-    invoiceStatus: 'Raised, awaiting acceptance',
-    preferredContact: 'Phone Call',
-    message: '',
-    consent: false
-  });
 
-  const [formErrors, setFormErrors] = useState({});
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitSuccess, setSubmitSuccess] = useState(false);
-  const [submitError, setSubmitError] = useState(null);
-
-  const handleInputChange = (e) => {
-    const { name, value, type, checked } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: type === 'checkbox' ? checked : value
-    }));
-    if (formErrors[name]) {
-      setFormErrors(prev => ({ ...prev, [name]: null }));
-    }
-  };
-
-  const validateForm = () => {
-    const errors = {};
-    if (!formData.fullName.trim()) errors.fullName = 'Please enter your full name.';
-    if (!formData.businessName.trim()) errors.businessName = 'Please enter your business/company name.';
-    
-    // Indian Mobile Number validation (10 digits starting with 6-9)
-    const cleanMobile = formData.mobileNumber.replace(/\D/g, '');
-    if (!cleanMobile) {
-      errors.mobileNumber = 'Please enter your mobile phone number.';
-    } else if (cleanMobile.length !== 10 || !/^[6-9]/.test(cleanMobile)) {
-      errors.mobileNumber = 'Please enter a valid 10-digit Indian mobile number (e.g. 9876543210).';
-    }
-
-    // Email validation
-    if (!formData.emailAddress.trim()) {
-      errors.emailAddress = 'Please enter your email address.';
-    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.emailAddress.trim())) {
-      errors.emailAddress = 'Please enter a valid email address.';
-    }
-
-    if (!formData.consent) {
-      errors.consent = 'You must review and accept the consent statement to submit an enquiry.';
-    }
-
-    return errors;
-  };
-
-  const handleFormSubmit = async (e) => {
-    e.preventDefault();
-    setSubmitError(null);
-
-    const errors = validateForm();
-    if (Object.keys(errors).length > 0) {
-      setFormErrors(errors);
-      return;
-    }
-
-    setIsSubmitting(true);
-
-    try {
-      // Simulate/persist enquiry to localStorage and prepare dispatch
-      const enquiryPayload = {
-        id: 'TREDS-' + Date.now(),
-        ...formData,
-        submittedAt: new Date().toISOString()
-      };
-
-      // 1. Store in localStorage for audit persistence
-      const existing = JSON.parse(localStorage.getItem('ds_treds_enquiries') || '[]');
-      existing.unshift(enquiryPayload);
-      localStorage.setItem('ds_treds_enquiries', JSON.stringify(existing.slice(0, 50)));
-
-      // Simulate network request latency
-      await new Promise(resolve => setTimeout(resolve, 800));
-
-      setSubmitSuccess(true);
-      // Reset form fields
-      setFormData({
-        fullName: '',
-        businessName: '',
-        mobileNumber: '',
-        emailAddress: '',
-        state: 'Andhra Pradesh',
-        businessCategory: 'Micro',
-        enquiryType: 'Understanding TReDS Process',
-        udyamStatus: 'Registered',
-        invoiceValueRange: '₹5–10 lakh',
-        buyerType: 'Private Corporate',
-        invoiceStatus: 'Raised, awaiting acceptance',
-        preferredContact: 'Phone Call',
-        message: '',
-        consent: false
-      });
-    } catch (err) {
-      console.error('Enquiry submission error:', err);
-      setSubmitError('We were unable to process your enquiry. Please call us directly at +91 9701529191.');
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
 
   // ─────────────────────────────────────────────────────────────────────────────
   // FAQ ACCORDION STATE (Section L - 14 Questions)
@@ -391,10 +273,10 @@ export default function TReDSFinancing() {
               {/* CTAs */}
               <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
                 <a
-                  href="#enquiry-form"
+                  href="#contact-options"
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#F59E0B] hover:bg-[#d98906] text-slate-950 px-7 py-3.5 rounded-lg text-sm font-black uppercase tracking-wider shadow-lg hover:shadow-xl transition-all cursor-pointer transform hover:-translate-y-0.5"
                 >
-                  <span>Check My Enquiry Options</span>
+                  <span>Contact Our Advisors</span>
                   <ArrowRight size={16} />
                 </a>
 
@@ -1145,305 +1027,9 @@ export default function TReDSFinancing() {
       </section>
 
       {/* ───────────────────────────────────────────────────────────────────── */}
-      {/* SECTION J: DS PROJECTS SUPPORT / ENQUIRY FORM */}
+      {/* DIRECT CONTACT & OFFICE LOCATIONS */}
       {/* ───────────────────────────────────────────────────────────────────── */}
-      <section id="enquiry-form" className="py-16 md:py-24 bg-gradient-to-b from-slate-50 to-white border-b border-slate-200/80">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          
-          <div className="text-center mb-12">
-            <span className="text-xs font-black text-[#0055A4] uppercase tracking-widest bg-blue-100/60 px-3 py-1 rounded-sm border-l-4 border-[#0055A4]">
-              Enquiry & Advisory Support
-            </span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-black text-slate-900 mt-3 tracking-tight">
-              Need Help Understanding the TReDS Process?
-            </h2>
-            <div className="w-16 h-1 bg-[#F59E0B] mx-auto mt-3 mb-4 rounded-full" />
-            <p className="text-base text-slate-600 max-w-2xl mx-auto font-medium">
-              Share a few details about your business and invoice requirements. The DS PROJECTS team can review your enquiry and explain the relevant next steps, subject to the services actually offered by the business.
-            </p>
-          </div>
-
-          <div className="bg-white rounded-3xl shadow-2xl border border-slate-200 p-6 sm:p-10">
-            
-            {/* Success State Alert */}
-            {submitSuccess && (
-              <div className="mb-8 p-6 bg-emerald-50 border-2 border-emerald-300 rounded-2xl space-y-3 animate-in fade-in">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-emerald-600 text-white flex items-center justify-center font-bold">
-                    <Check size={20} />
-                  </div>
-                  <div>
-                    <h4 className="text-base font-extrabold text-emerald-950">Enquiry Received Successfully</h4>
-                    <p className="text-xs text-emerald-700 font-semibold">Reference ID Generated</p>
-                  </div>
-                </div>
-                <p className="text-xs sm:text-sm text-emerald-900 leading-relaxed font-medium">
-                  Thank you for contacting DS PROJECTS. Your enquiry has been submitted successfully. Our team will review the information and contact you using the details provided.
-                </p>
-                <button
-                  type="button"
-                  onClick={() => setSubmitSuccess(false)}
-                  className="text-xs font-bold text-emerald-800 underline hover:text-emerald-950 pt-1 cursor-pointer"
-                >
-                  Submit another enquiry
-                </button>
-              </div>
-            )}
-
-            {/* Error Banner */}
-            {submitError && (
-              <div className="mb-6 p-4 bg-rose-50 border border-rose-200 rounded-xl text-xs text-rose-800 font-semibold flex items-center gap-2">
-                <AlertCircle size={16} className="text-rose-600 shrink-0" />
-                <span>{submitError}</span>
-              </div>
-            )}
-
-            <form onSubmit={handleFormSubmit} noValidate className="space-y-6">
-              
-              {/* Row 1: Full Name & Business Name */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                <div className="space-y-1.5">
-                  <label className="text-xs font-bold text-slate-700">Full Legal Name *</label>
-                  <input
-                    type="text"
-                    name="fullName"
-                    required
-                    value={formData.fullName}
-                    onChange={handleInputChange}
-                    placeholder="e.g. Ramesh Kumar"
-                    className={`w-full px-4 py-2.5 bg-slate-50 border rounded-xl text-sm font-medium focus:outline-none focus:ring-2 focus:ring-[#0055A4] ${
-                      formErrors.fullName ? 'border-rose-400 bg-rose-50/30' : 'border-slate-300'
-                    }`}
-                  />
-                  {formErrors.fullName && <p className="text-[11px] text-rose-600 font-semibold">{formErrors.fullName}</p>}
-                </div>
-
-                <div className="space-y-1.5">
-                  <label className="text-xs font-bold text-slate-700">Business / Enterprise Name *</label>
-                  <input
-                    type="text"
-                    name="businessName"
-                    required
-                    value={formData.businessName}
-                    onChange={handleInputChange}
-                    placeholder="e.g. Sri Balaji Engineering Works"
-                    className={`w-full px-4 py-2.5 bg-slate-50 border rounded-xl text-sm font-medium focus:outline-none focus:ring-2 focus:ring-[#0055A4] ${
-                      formErrors.businessName ? 'border-rose-400 bg-rose-50/30' : 'border-slate-300'
-                    }`}
-                  />
-                  {formErrors.businessName && <p className="text-[11px] text-rose-600 font-semibold">{formErrors.businessName}</p>}
-                </div>
-              </div>
-
-              {/* Row 2: Mobile Number & Email Address */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                <div className="space-y-1.5">
-                  <label className="text-xs font-bold text-slate-700">Mobile Phone Number *</label>
-                  <div className="relative">
-                    <span className="absolute left-3.5 top-1/2 -translate-y-1/2 text-xs font-bold text-slate-400">+91</span>
-                    <input
-                      type="tel"
-                      name="mobileNumber"
-                      required
-                      maxLength={10}
-                      value={formData.mobileNumber}
-                      onChange={handleInputChange}
-                      placeholder="9876543210"
-                      className={`w-full pl-12 pr-4 py-2.5 bg-slate-50 border rounded-xl text-sm font-medium focus:outline-none focus:ring-2 focus:ring-[#0055A4] ${
-                        formErrors.mobileNumber ? 'border-rose-400 bg-rose-50/30' : 'border-slate-300'
-                      }`}
-                    />
-                  </div>
-                  {formErrors.mobileNumber && <p className="text-[11px] text-rose-600 font-semibold">{formErrors.mobileNumber}</p>}
-                </div>
-
-                <div className="space-y-1.5">
-                  <label className="text-xs font-bold text-slate-700">Official Email Address *</label>
-                  <input
-                    type="email"
-                    name="emailAddress"
-                    required
-                    value={formData.emailAddress}
-                    onChange={handleInputChange}
-                    placeholder="name@company.com"
-                    className={`w-full px-4 py-2.5 bg-slate-50 border rounded-xl text-sm font-medium focus:outline-none focus:ring-2 focus:ring-[#0055A4] ${
-                      formErrors.emailAddress ? 'border-rose-400 bg-rose-50/30' : 'border-slate-300'
-                    }`}
-                  />
-                  {formErrors.emailAddress && <p className="text-[11px] text-rose-600 font-semibold">{formErrors.emailAddress}</p>}
-                </div>
-              </div>
-
-              {/* Row 3: State & Business Category */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                <div className="space-y-1.5">
-                  <label className="text-xs font-bold text-slate-700">State / Location</label>
-                  <select
-                    name="state"
-                    value={formData.state}
-                    onChange={handleInputChange}
-                    className="w-full px-4 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm font-medium focus:outline-none focus:ring-2 focus:ring-[#0055A4]"
-                  >
-                    <option>Andhra Pradesh</option>
-                    <option>Telangana</option>
-                    <option>Tamil Nadu</option>
-                    <option>Karnataka</option>
-                    <option>Maharashtra</option>
-                    <option>Other State</option>
-                  </select>
-                </div>
-
-                <div className="space-y-1.5">
-                  <label className="text-xs font-bold text-slate-700">MSME Enterprise Category</label>
-                  <select
-                    name="businessCategory"
-                    value={formData.businessCategory}
-                    onChange={handleInputChange}
-                    className="w-full px-4 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm font-medium focus:outline-none focus:ring-2 focus:ring-[#0055A4]"
-                  >
-                    <option>Micro Enterprise (Investment &lt; ₹1 Cr, Turnover &lt; ₹5 Cr)</option>
-                    <option>Small Enterprise (Investment &lt; ₹10 Cr, Turnover &lt; ₹50 Cr)</option>
-                    <option>Medium Enterprise (Investment &lt; ₹50 Cr, Turnover &lt; ₹250 Cr)</option>
-                    <option>Not Sure / In Evaluation</option>
-                  </select>
-                </div>
-              </div>
-
-              {/* Row 4: Enquiry Type & Invoice Value Range */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                <div className="space-y-1.5">
-                  <label className="text-xs font-bold text-slate-700">Primary Enquiry Objective</label>
-                  <select
-                    name="enquiryType"
-                    value={formData.enquiryType}
-                    onChange={handleInputChange}
-                    className="w-full px-4 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm font-medium focus:outline-none focus:ring-2 focus:ring-[#0055A4]"
-                  >
-                    <option>Understanding TReDS Process</option>
-                    <option>Invoice Discounting Guidance</option>
-                    <option>Udyam & Documentation Review</option>
-                    <option>Buyer Onboarding Coordination</option>
-                    <option>General Working Capital Consultation</option>
-                  </select>
-                </div>
-
-                <div className="space-y-1.5">
-                  <label className="text-xs font-bold text-slate-700">Approximate Invoice Value Range</label>
-                  <select
-                    name="invoiceValueRange"
-                    value={formData.invoiceValueRange}
-                    onChange={handleInputChange}
-                    className="w-full px-4 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm font-medium focus:outline-none focus:ring-2 focus:ring-[#0055A4]"
-                  >
-                    <option>Under ₹1 lakh</option>
-                    <option>₹1–5 lakh</option>
-                    <option>₹5–10 lakh</option>
-                    <option>₹10–25 lakh</option>
-                    <option>Above ₹25 lakh</option>
-                    <option>Not sure / Variable</option>
-                  </select>
-                </div>
-              </div>
-
-              {/* Row 5: Buyer Type & Invoice Status */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                <div className="space-y-1.5">
-                  <label className="text-xs font-bold text-slate-700">Counterparty Buyer Type</label>
-                  <select
-                    name="buyerType"
-                    value={formData.buyerType}
-                    onChange={handleInputChange}
-                    className="w-full px-4 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm font-medium focus:outline-none focus:ring-2 focus:ring-[#0055A4]"
-                  >
-                    <option>Private Limited / Public Corporate</option>
-                    <option>Central / State PSU</option>
-                    <option>Government Department</option>
-                    <option>Multi-Tier Vendor</option>
-                    <option>Not Sure</option>
-                  </select>
-                </div>
-
-                <div className="space-y-1.5">
-                  <label className="text-xs font-bold text-slate-700">Current Invoice Status</label>
-                  <select
-                    name="invoiceStatus"
-                    value={formData.invoiceStatus}
-                    onChange={handleInputChange}
-                    className="w-full px-4 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm font-medium focus:outline-none focus:ring-2 focus:ring-[#0055A4]"
-                  >
-                    <option>Not yet raised (Future billing)</option>
-                    <option>Raised, awaiting acceptance</option>
-                    <option>Accepted by buyer</option>
-                    <option>Past due date / Delayed payment</option>
-                    <option>Not sure</option>
-                  </select>
-                </div>
-              </div>
-
-              {/* Message */}
-              <div className="space-y-1.5">
-                <label className="text-xs font-bold text-slate-700">Brief Message or Specific Questions (Optional)</label>
-                <textarea
-                  name="message"
-                  rows={3}
-                  value={formData.message}
-                  onChange={handleInputChange}
-                  placeholder="Share details regarding your industry, billing cycle, or specific questions..."
-                  className="w-full px-4 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm font-medium focus:outline-none focus:ring-2 focus:ring-[#0055A4]"
-                />
-              </div>
-
-              {/* Mandatory Consent Checkbox */}
-              <div className="space-y-1 pt-1">
-                <label className="flex items-start gap-3 cursor-pointer">
-                  <input
-                    type="checkbox"
-                    name="consent"
-                    checked={formData.consent}
-                    onChange={handleInputChange}
-                    className="w-4 h-4 rounded text-[#0055A4] focus:ring-[#0055A4] mt-0.5 cursor-pointer shrink-0"
-                  />
-                  <span className="text-xs text-slate-600 leading-relaxed font-medium">
-                    I confirm that I have read the privacy notice and agree to be contacted by DS PROJECTS regarding my invoice financing advisory enquiry. I understand that submitting this enquiry does not constitute a loan application or a financing commitment. *
-                  </span>
-                </label>
-                {formErrors.consent && <p className="text-[11px] text-rose-600 font-semibold pl-7">{formErrors.consent}</p>}
-              </div>
-
-              {/* Submit CTA */}
-              <div className="pt-3">
-                <button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className="w-full bg-[#003366] hover:bg-[#002244] text-white py-4 px-8 rounded-xl font-black text-sm uppercase tracking-wider shadow-lg hover:shadow-xl transition-all cursor-pointer flex items-center justify-center gap-2 disabled:opacity-50"
-                >
-                  {isSubmitting ? (
-                    <>
-                      <span className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-                      <span>Processing Enquiry...</span>
-                    </>
-                  ) : (
-                    <>
-                      <span>Submit My Invoice Financing Enquiry</span>
-                      <Send size={16} />
-                    </>
-                  )}
-                </button>
-              </div>
-
-              <p className="text-[11px] text-center text-slate-500 font-medium">
-                🔒 Your privacy is important. DS PROJECTS collects contact information strictly to assist with your advisory enquiry. We do not sell or distribute your data.
-              </p>
-            </form>
-          </div>
-
-        </div>
-      </section>
-
-      {/* ───────────────────────────────────────────────────────────────────── */}
-      {/* SECTION K: CONTACT OPTIONS */}
-      {/* ───────────────────────────────────────────────────────────────────── */}
-      <section className="py-16 md:py-20 bg-slate-50 border-b border-slate-200/80">
+      <section id="contact-options" className="py-16 md:py-20 bg-slate-50 border-b border-slate-200/80">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
@@ -1587,10 +1173,10 @@ export default function TReDSFinancing() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
             <a
-              href="#enquiry-form"
+              href="#contact-options"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#F59E0B] hover:bg-[#d98906] text-slate-950 px-8 py-4 rounded-xl text-sm font-black uppercase tracking-wider shadow-xl transition-all cursor-pointer"
             >
-              <span>Submit an Enquiry</span>
+              <span>Contact DS PROJECTS</span>
               <ArrowRight size={16} />
             </a>
             <a
