@@ -24,7 +24,8 @@ import {
   Landmark,
   Briefcase,
   AlertTriangle,
-  RotateCcw
+  RotateCcw,
+  Check
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
