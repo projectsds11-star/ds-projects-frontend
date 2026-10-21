@@ -5,6 +5,7 @@ import {
   TrendingUp,
   FileText,
   CheckCircle2,
+  AlertCircle,
   Phone,
   Mail,
   MapPin,
