@@ -42,6 +42,8 @@ export default function TReDSFinancing() {
     window.scrollTo(0, 0);
   }, []);
 
+  // v2 — enquiry form removed, contact section retained
+
   // ─────────────────────────────────────────────────────────────────────────────
   // WORKFLOW TAB STATE
   // ─────────────────────────────────────────────────────────────────────────────
