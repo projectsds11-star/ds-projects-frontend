@@ -29,7 +29,7 @@ const Contact = () => {
             `Message: ${message}%0a` +
             `------------------------`;
 
-        const phoneNumber = '919701529797';
+        const phoneNumber = '919701529191';
         const url = `https://wa.me/${phoneNumber}?text=${whatsappMessage}`;
 
         window.open(url, '_blank');
@@ -64,9 +64,9 @@ const Contact = () => {
                                     <div>
                                         <h3 className="font-black text-[#003366] mb-2 uppercase tracking-widest text-xs">Headquarters</h3>
                                         <p className="text-gray-700 leading-relaxed font-medium">
-                                            Sai Complex, 3rd Floor,<br />
-                                            Daravari Thota, Opp: Bank Of Baroda,<br />
-                                            Ongole, PIN: 523001, AP
+                                            Guntur Mini Bypass Road,<br />
+                                            Opposite Royal Oak, Ongole,<br />
+                                            PIN: 523001, AP
                                         </p>
                                     </div>
                                 </div>
@@ -77,7 +77,7 @@ const Contact = () => {
                                     </div>
                                     <div>
                                         <h3 className="font-black text-[#003366] mb-2 uppercase tracking-widest text-xs">Phone</h3>
-                                        <p className="text-gray-900 font-black text-2xl tracking-tighter">+91 9701529797</p>
+                                        <p className="text-gray-900 font-black text-2xl tracking-tighter">+91 9701529191</p>
                                         <p className="text-gray-500 text-xs mt-1 font-bold uppercase tracking-widest">(Mon-Sat, 9 AM - 6 PM)</p>
                                     </div>
                                 </div>
@@ -92,7 +92,7 @@ const Contact = () => {
                                     </div>
                                 </div>
 
-                                <a href="https://wa.me/919701529797" target="_blank" rel="noopener noreferrer" className="flex items-center gap-5 group cursor-pointer">
+                                <a href="https://wa.me/919701529191" target="_blank" rel="noopener noreferrer" className="flex items-center gap-5 group cursor-pointer">
                                     <div className="bg-[#25D366] p-4 rounded-full text-white shadow-md group-hover:scale-110 transition-transform">
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
@@ -106,7 +106,7 @@ const Contact = () => {
                                     </div>
                                     <div>
                                         <h3 className="font-black text-[#003366] mb-2 uppercase tracking-widest text-xs">WhatsApp</h3>
-                                        <p className="text-gray-700 font-bold text-lg group-hover:text-[#25D366] transition-colors">+91 9701529797</p>
+                                        <p className="text-gray-700 font-bold text-lg group-hover:text-[#25D366] transition-colors">+91 9701529191</p>
                                     </div>
                                 </a>
                             </div>

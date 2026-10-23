@@ -39,11 +39,11 @@ const About = () => {
                                 </div>
                                 <div>
                                     <span className="block text-gray-500 text-xs uppercase font-black tracking-widest mb-1">UDYAM Reg. Number</span>
-                                    <span className="font-mono font-black text-[#0055A4] bg-teal-50 px-3 py-1 rounded-sm border border-teal-100 inline-block">UDYAM-AP-13-0078844</span>
+                                    <span className="font-mono font-black text-[#0055A4] bg-teal-50 px-3 py-1 rounded-sm border border-teal-100 inline-block">UDYAM-AP-13-0077732</span>
                                 </div>
                                 <div>
                                     <span className="block text-gray-500 text-xs uppercase font-black tracking-widest mb-1">Headquarters</span>
-                                    <span className="font-bold text-gray-800">Ongole, Andhra Pradesh</span>
+                                    <span className="font-bold text-gray-800">Guntur Mini Bypass Road, Opposite Royal Oak, Ongole, Andhra Pradesh</span>
                                 </div>
                                 <div>
                                     <span className="block text-gray-500 text-xs uppercase font-black tracking-widest mb-1">Established</span>

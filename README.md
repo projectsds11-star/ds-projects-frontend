@@ -1,4 +1,4 @@
-﻿# DS Projects - React Website
+# DS Projects - React Website
 
 This is a complete, production-ready React website for **DS Projects**.
 It is built with React (Vite), React Router v6, and Tailwind CSS.
@@ -101,7 +101,7 @@ If you encounter 404 errors when refreshing pages on Vercel/Netlify:
 ## 5. Content & Compliance
 
 - **Organization:** DS Projects
-- **Registration:** UDYAM-AP-13-0078844
+- **Registration:** UDYAM-AP-13-0077732
 - **Disclaimer:** The website clearly states "Authorized Partner / Facilitator" and does not claim to be a government department.
 - **Colors:** Green, Blue, White (Clean Government Style).
 
