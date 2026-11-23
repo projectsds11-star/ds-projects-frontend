@@ -256,10 +256,11 @@ export default function JobApplication() {
     };
 
     try {
-      // Submit to central DS Projects API
+      // Submit to central DS Projects API (supports production & local dev)
       const endpoints = [
         'https://admin.dsprojectss.com/api/applications',
         'https://ds-projects-eta.vercel.app/api/applications',
+        'http://localhost:5000/api/applications',
       ];
 
       let resData = null;
