@@ -132,7 +132,7 @@ const Careers = () => {
                                         to={`/apply?position=${encodeURIComponent(job.service + ' Field Work')}`}
                                         className="bg-[#0055A4] hover:bg-[#003366] text-white font-bold text-xs uppercase px-5 py-2.5 rounded-sm shadow-md flex items-center gap-2 transition-all"
                                     >
-                                        <span>Fill Official Application Form</span>
+                                        <span>Apply for this Position</span>
                                         <ChevronRight size={14} />
                                     </Link>
                                     <button
@@ -155,16 +155,16 @@ const Careers = () => {
                         <div className="bg-white p-10 rounded-sm shadow-2xl border border-gray-100 border-t-8 border-t-[#0055A4]">
                             <div className="mb-6 p-5 bg-gradient-to-r from-blue-50 to-sky-50 border-2 border-[#0055A4] rounded-sm text-center space-y-2">
                                 <p className="font-extrabold text-[#003366] text-sm uppercase tracking-wide">
-                                    Official 2-Page Job Application Form
+                                    MSME ZED Field Work Application
                                 </p>
                                 <p className="text-xs text-gray-600">
-                                    Apply with Photo, Educational Qualifications, Field Work Readiness &amp; Digital Signature.
+                                    Submit your candidate profile, educational qualifications &amp; field readiness directly online.
                                 </p>
                                 <Link
                                     to="/apply"
                                     className="inline-flex items-center gap-2 mt-2 bg-[#0055A4] hover:bg-[#003366] text-white font-bold text-xs uppercase px-6 py-2.5 rounded-sm shadow-md transition-all"
                                 >
-                                    <span>Open Official Application Form (A4)</span>
+                                    <span>Apply Online Now</span>
                                     <ChevronRight size={14} />
                                 </Link>
                             </div>

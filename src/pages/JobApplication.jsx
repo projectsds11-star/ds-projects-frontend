@@ -367,7 +367,7 @@ export default function JobApplication() {
                   className="bg-[#0055A4] hover:bg-[#003366] text-white gap-2 font-bold px-6 h-11 rounded-xl shadow-md inline-flex items-center text-xs"
                 >
                   <Printer size={16} />
-                  <span>Download / Print Official Form</span>
+                  <span>Download / Print Application Copy</span>
                 </button>
                 <button
                   type="button"
