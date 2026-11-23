@@ -64,7 +64,7 @@ const Contact = () => {
                                     <div>
                                         <h3 className="font-black text-[#003366] mb-2 uppercase tracking-widest text-xs">Headquarters</h3>
                                         <p className="text-gray-700 leading-relaxed font-medium">
-                                            Guntur Mini Bypass Road,<br />
+                                            RRR Complex, Guntur Mini Bypass Road,<br />
                                             Opposite Royal Oak, Ongole,<br />
                                             PIN: 523001, AP
                                         </p>

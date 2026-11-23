@@ -139,8 +139,8 @@ const Footer = () => {
                                 </div>
                                 <div className="text-sm text-gray-100 leading-snug font-medium">
                                     <strong className="block mb-0.5 text-white">Corporate Office:</strong>
-                                    Guntur Mini Bypass Road,<br/>
-                                    Opposite Royal Oak, Ongole
+                                    RRR Complex, Guntur Mini Bypass Road,<br/>
+                                    Opposite Royal Oak, Ongole-523001
                                 </div>
                             </div>
                             <div className="flex items-center gap-3 group">

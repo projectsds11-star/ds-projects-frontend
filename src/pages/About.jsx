@@ -43,7 +43,7 @@ const About = () => {
                                 </div>
                                 <div>
                                     <span className="block text-gray-500 text-xs uppercase font-black tracking-widest mb-1">Headquarters</span>
-                                    <span className="font-bold text-gray-800">Guntur Mini Bypass Road, Opposite Royal Oak, Ongole, Andhra Pradesh</span>
+                                    <span className="font-bold text-gray-800">RRR Complex, Guntur Mini Bypass Road, Opposite Royal Oak, Ongole, Andhra Pradesh - 523001</span>
                                 </div>
                                 <div>
                                     <span className="block text-gray-500 text-xs uppercase font-black tracking-widest mb-1">Established</span>
