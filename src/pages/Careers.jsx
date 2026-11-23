@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Briefcase, MapPin, IndianRupee, Clock, Send, ChevronRight, FileText } from 'lucide-react';
+import { Briefcase, MapPin, IndianRupee, Clock, Send, ChevronRight, FileText, ArrowRight } from 'lucide-react';
 import DownloadCard from '../components/DownloadCard';
 
 const Careers = () => {
@@ -75,8 +75,97 @@ const Careers = () => {
                 </div>
             </div>
 
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-14 space-y-12">
+
+                {/* ── Top Recruitment Spotlight Banner (Identical to Home Page) ── */}
+                <div className="bg-white rounded-lg shadow-xl border border-blue-100 overflow-hidden">
+                    <div className="grid grid-cols-1 lg:grid-cols-12 items-center">
+                        
+                        {/* Left Content Column */}
+                        <div className="p-8 sm:p-12 lg:col-span-8 space-y-6">
+                            <div className="inline-flex items-center gap-2 px-3 py-1 bg-amber-100 text-amber-900 border border-amber-200 text-xs font-black uppercase tracking-wider rounded-sm">
+                                <span>We Are Hiring Across Andhra Pradesh</span>
+                            </div>
+
+                            <div>
+                                <h2 className="text-2xl sm:text-4xl font-black text-[#003366] tracking-tight leading-tight">
+                                    MSME ZED Certification Field Officer Opportunity
+                                </h2>
+                                <p className="text-slate-600 text-sm sm:text-base mt-3 leading-relaxed">
+                                    Build a high-growth career with <strong>DS Projects Private Limited</strong>. Assist micro, small, and medium enterprises across Andhra Pradesh in achieving National ZED Certification, digital documentation, and quality governance.
+                                </p>
+                            </div>
+
+                            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
+                                <div className="p-3.5 bg-slate-50 border border-slate-200 rounded-sm">
+                                    <div className="text-xs text-slate-500 font-bold uppercase tracking-wider">Remuneration</div>
+                                    <div className="text-base font-black text-[#0055A4] mt-0.5">₹25,000 – ₹30,000</div>
+                                    <div className="text-[11px] text-slate-500">Per Month + Allowances</div>
+                                </div>
+                                <div className="p-3.5 bg-slate-50 border border-slate-200 rounded-sm">
+                                    <div className="text-xs text-slate-500 font-bold uppercase tracking-wider">Location</div>
+                                    <div className="text-base font-black text-slate-800 mt-0.5">Andhra Pradesh</div>
+                                    <div className="text-[11px] text-slate-500">Mandal &amp; District Field Visits</div>
+                                </div>
+                                <div className="p-3.5 bg-slate-50 border border-slate-200 rounded-sm">
+                                    <div className="text-xs text-slate-500 font-bold uppercase tracking-wider">Eligibility</div>
+                                    <div className="text-base font-black text-slate-800 mt-0.5">Any Degree / Diploma</div>
+                                    <div className="text-[11px] text-slate-500">Freshers &amp; Exp. Welcome</div>
+                                </div>
+                            </div>
+
+                            <div className="pt-2 flex flex-wrap items-center gap-4">
+                                <Link
+                                    to="/apply?position=MSME%20ZED%20Certification%20Field%20Work"
+                                    className="inline-flex items-center gap-2 px-7 py-3.5 bg-[#0055A4] hover:bg-[#003366] text-white font-black text-sm uppercase tracking-wider rounded-sm shadow-md transition-all group"
+                                >
+                                    <span>Apply Online Now</span>
+                                    <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                                </Link>
+                                <a
+                                    href="#open-opportunities"
+                                    className="inline-flex items-center gap-2 px-6 py-3.5 bg-transparent border-2 border-[#0055A4] text-[#0055A4] hover:bg-blue-50 font-bold text-sm uppercase tracking-wider rounded-sm transition-all"
+                                >
+                                    <span>View All Positions Below</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        {/* Right Highlight Column */}
+                        <div className="bg-gradient-to-br from-[#003366] to-[#0055A4] text-white p-8 sm:p-12 lg:col-span-4 h-full flex flex-col justify-center space-y-4 border-t lg:border-t-0 lg:border-l-4 border-[#F59E0B]">
+                            <h3 className="text-lg font-black tracking-wide uppercase text-amber-300">
+                                Quick Highlights
+                            </h3>
+                            <ul className="space-y-3 text-xs sm:text-sm text-blue-50 leading-relaxed">
+                                <li className="flex items-start gap-2">
+                                    <span className="text-amber-400 font-bold">✔</span>
+                                    <span>Field coordination with local MSME manufacturing units.</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-amber-400 font-bold">✔</span>
+                                    <span>Complete digital documentation &amp; verification support.</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-amber-400 font-bold">✔</span>
+                                    <span>Official Appointment Letter with direct corporate onboarding.</span>
+                                </li>
+                                <li className="flex items-start gap-2">
+                                    <span className="text-amber-400 font-bold">✔</span>
+                                    <span>Preferred posting in candidate's home district or mandal.</span>
+                                </li>
+                            </ul>
+
+                            <div className="pt-2 border-t border-white/20">
+                                <p className="text-[11px] text-blue-200">
+                                    * Two-wheeler and valid driving license preferred for field visits.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div id="open-opportunities" className="grid grid-cols-1 lg:grid-cols-2 gap-16 pt-4">
 
                     {/* Job Listings Column */}
                     <div className="space-y-8">
