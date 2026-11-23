@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Briefcase, MapPin, IndianRupee, Clock, Send, ChevronRight, FileText } from 'lucide-react';
 import DownloadCard from '../components/DownloadCard';
 
@@ -126,14 +127,21 @@ const Careers = () => {
                                     </div>
                                 </div>
 
-                                <div className="pt-6 border-t border-gray-50">
+                                <div className="pt-6 border-t border-gray-50 flex items-center justify-between gap-4 flex-wrap">
+                                    <Link
+                                        to={`/apply?position=${encodeURIComponent(job.service + ' Field Work')}`}
+                                        className="bg-[#0055A4] hover:bg-[#003366] text-white font-bold text-xs uppercase px-5 py-2.5 rounded-sm shadow-md flex items-center gap-2 transition-all"
+                                    >
+                                        <span>Fill Official Application Form</span>
+                                        <ChevronRight size={14} />
+                                    </Link>
                                     <button
                                         onClick={() => {
                                             document.getElementById('application-form').scrollIntoView({ behavior: 'smooth' });
                                         }}
-                                        className="text-[#0055A4] font-black text-sm uppercase tracking-[0.2em] flex items-center gap-2 group-hover:gap-4 transition-all"
+                                        className="text-[#0055A4] font-black text-xs uppercase tracking-wider flex items-center gap-1 hover:underline"
                                     >
-                                        Apply for this position <ChevronRight size={16} />
+                                        Quick WhatsApp Apply <ChevronRight size={14} />
                                     </button>
                                 </div>
                             </div>
@@ -145,6 +153,22 @@ const Careers = () => {
 
 
                         <div className="bg-white p-10 rounded-sm shadow-2xl border border-gray-100 border-t-8 border-t-[#0055A4]">
+                            <div className="mb-6 p-5 bg-gradient-to-r from-blue-50 to-sky-50 border-2 border-[#0055A4] rounded-sm text-center space-y-2">
+                                <p className="font-extrabold text-[#003366] text-sm uppercase tracking-wide">
+                                    Official 2-Page Job Application Form
+                                </p>
+                                <p className="text-xs text-gray-600">
+                                    Apply with Photo, Educational Qualifications, Field Work Readiness &amp; Digital Signature.
+                                </p>
+                                <Link
+                                    to="/apply"
+                                    className="inline-flex items-center gap-2 mt-2 bg-[#0055A4] hover:bg-[#003366] text-white font-bold text-xs uppercase px-6 py-2.5 rounded-sm shadow-md transition-all"
+                                >
+                                    <span>Open Official Application Form (A4)</span>
+                                    <ChevronRight size={14} />
+                                </Link>
+                            </div>
+
                             <div className="mb-10">
                                 <h2 className="text-3xl font-black text-[#1a202c] mb-2 uppercase tracking-tight">Application Form</h2>
                                 <p className="text-gray-500 font-medium tracking-wide">Submit your details to start the process.</p>

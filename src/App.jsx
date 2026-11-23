@@ -7,6 +7,7 @@ import About from './pages/About';
 import Services from './pages/Services';
 import ZEDCertification from './pages/ZEDCertification';
 import Careers from './pages/Careers';
+import JobApplication from './pages/JobApplication';
 import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
 import SarpanchSamvad from './pages/SarpanchSamvad';
@@ -37,6 +38,8 @@ function App() {
             <Route path="/zed-certification" element={<ZEDCertification />} />
             <Route path="/sarpanch-samvad" element={<SarpanchSamvad />} />
             <Route path="/careers" element={<Careers />} />
+            <Route path="/apply" element={<JobApplication />} />
+            <Route path="/job-application" element={<JobApplication />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/conclave-2025" element={<Conclave2025 />} />

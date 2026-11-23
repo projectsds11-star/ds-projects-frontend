@@ -40,6 +40,7 @@ const Navbar = () => {
             ]
         },
         { name: t('careers'), path: '/careers' },
+        { name: 'Apply Online', path: '/apply' },
         { name: t('gallery'), path: '/gallery' },
         { name: t('contact'), path: '/contact' },
     ];
