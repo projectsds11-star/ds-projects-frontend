@@ -40,7 +40,6 @@ const Navbar = () => {
             ]
         },
         { name: t('careers'), path: '/careers' },
-        { name: 'Apply Online', path: '/apply' },
         { name: t('gallery'), path: '/gallery' },
         { name: t('contact'), path: '/contact' },
     ];
@@ -151,14 +150,14 @@ const Navbar = () => {
             <nav className="bg-gradient-to-r from-[#003366] to-[#0055A4] text-white shadow-md relative z-10 border-t-4 border-[#F59E0B]">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row md:justify-between">
                     {/* Desktop Menu */}
-                    <ul className="hidden md:flex flex-wrap">
+                    <ul className="hidden md:flex items-center flex-nowrap">
                         {navLinks.map((link) => (
                             <li key={link.name} className="group relative h-full">
                                 {link.dropdown ? (
                                     <div className="flex h-full">
                                         <Link
                                             to={link.path}
-                                            className={`flex items-center h-full px-4 py-4 text-sm font-extrabold tracking-wide uppercase transition-colors 
+                                            className={`flex items-center h-full px-3 lg:px-4 py-4 text-sm font-extrabold tracking-wide uppercase transition-colors whitespace-nowrap 
                                                 ${isActive(link) ? 'bg-black/20 text-white' : 'hover:bg-black/10 text-white'}`}
                                         >
                                             {link.name}
@@ -182,7 +181,7 @@ const Navbar = () => {
                                 ) : (
                                     <Link
                                         to={link.path}
-                                        className={`inline-block h-full px-6 py-4 text-sm font-extrabold tracking-wide uppercase transition-colors
+                                        className={`inline-block h-full px-3 lg:px-5 py-4 text-sm font-extrabold tracking-wide uppercase transition-colors whitespace-nowrap
                                             ${isActive(link)
                                                 ? 'bg-black/20 text-white' // Active: semi-transparent dark overlay
                                                 : 'hover:bg-black/10 text-white' // Hover: semi-transparent dark overlay
